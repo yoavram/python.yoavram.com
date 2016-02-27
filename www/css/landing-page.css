@@ -198,3 +198,14 @@ p.copyright {
 #elevator {
   z-index: 500;
 }
+
+div.logo {
+    max-width:150px;
+    margin-top: -25px;
+    margin-bottom: 25px;
+
+}
+
+img.logo {
+
+}
