@@ -48,6 +48,8 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+<link href="css/font-awesome-extension.min.css" rel="stylesheet" type="text/css">
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -83,6 +85,9 @@
                 </li>
                 <li>
                     <a href="#contact"><i class="fa fa-envelope fa-fw hidden-xs"></i> Contact</a>
+                </li>
+                <li>
+                <a href="javascript:$('#speakerDeckModal').modal('toggle');" target="_blank"><i class="fa fae-python fa-fw hidden-xs"></i> Why Python?</a>
                 </li>
             </ul>
         </div>
@@ -156,22 +161,23 @@
             </div>
             <div class="col-sm-8">
                 <p class="lead">
+                    &dash; Postdoctoral fellow at Tel-Aviv University (soon at Stanford University). </br>
                     &dash; PhD in Mathematical &amp; Computational Biology from Tel-Aviv University. </br>
                     &dash; Programming with Python since 2002. </br>
                     &dash; Training and teaching Python since 2011. </br>
                     &dash; Excellence in Teaching Award from the Faculty of Engineering, Tel-Aviv University. </br>
-                    &dash; Specializing in Scientific Python: <em>NumPy, SciPy, Matplotlib, IPython, Pandas, Scikit</em>, etc.</br>
+                    &dash; Specializing in Scientific Python: <em>NumPy, SciPy, Matplotlib, Jupyter, Pandas, Cython</em>, etc.</br>
                     &dash; Experience building lightweight web applications and user interfaces. </br>
                 </p>                
                 <p class="lead">
                     I enjoy solving and communicating complex problems and ideas. </br>
                     I develop and give Python programming courses with focus on numerical, scientific, and statistical applications. </br>
                     To enhance participant learning, all course material is fully interactive, 
-                    using <em>IPython</em> notebooks, and all lectures include hands-on exercises. </br>
+                    using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. </br>
                 </p>
                 <p class="lead">
-                    Browse the offered courses below or contact me for customized courses.
-                </p>
+                    Browse the offered <a href="#courses">courses</a> below or <a href="#contact">contact me</a> for customized courses.
+                </p>                
             </div>
 
         </div>
@@ -212,7 +218,7 @@
                 <p class="lead">
                     <ul>
                         <li>
-                            Four days, 32 hours of interactive lectures in a computer lab
+                            Four-five days, 32-40 hours of interactive lectures in a computer lab
                         </li>                                
                         <li>
                             Built-in exercises
@@ -228,23 +234,25 @@
                             <ul class="list-inline">
                                 <li>Basic Python</li><li>&sdot;</li>
                                 <li>Idiomatic Python</li><li>&sdot;</li>
-                                <li>Object Oriented Programming</li><li>&sdot;</li>                                
-                                <li>Testing and debugging</li><li>&sdot;</li>
-                                <li>User interfaces</li><li>&sdot;</li>
-                                <li>Monitoring and event scheduling</li><li>&sdot;</li>
+                                <li>Object Oriented Programming</li><li>&sdot;</li>    
                                 <li>I/O</li><li>&sdot;</li>
                                 <li>N-dimensional arrays</li><li>&sdot;</li>
                                 <li>Plotting &amp; Visualizations</li><li>&sdot;</li>
                                 <li>Linear algebra</li><li>&sdot;</li>
                                 <li>Calculus</li><li>&sdot;</li>
                                 <li>Digital signal processing</li><li>&sdot;</li>
-                                <li>Image processing</li><li>&sdot;</li>
+                                <li>Image analysis</li><li>&sdot;</li>
                                 <li>Statistics</li><li>&sdot;</li>
                                 <li>Stochastic processes</li><li>&sdot;</li>
                                 <li>Curve fitting</li><li>&sdot;</li>
                                 <li>Optimization</li><li>&sdot;</li>
                                 <li>Machine learning</li><li>&sdot;</li>
-                                <li>Symbolic mathematics</li>
+                                <li>Symbolic mathematics</li><li>&sdot;</li>
+                                <li>High performance computing</li><li>&sdot;</li>
+                                <li>Testing and debugging</li><li>&sdot;</li>
+                                <li>User interfaces</li><li>&sdot;</li>
+                                <li>RESTful web services</li><li>&sdot;</li>
+                                <li>Monitoring and event scheduling</li>
                             </ul>                              
                         </li>                            
                         <li>
@@ -259,7 +267,9 @@
                                 <li><a href="http://scikit-learn.org/" target='_blank'>Scikit-learn</a></li><li>&sdot;</li>
                                 <li><a href="http://scikit-image.org/" target='_blank'>Scikit-image</a></li><li>&sdot;</li>
                                 <li><a href="http://sympy.org/" target='_blank'>SymPy</a></li><li>&sdot;</li>
-                                <li><a href="http://pyside.org" target='_blank'>PySide</a></li><li>&sdot;</li>
+                                <li><a href="http://cython.org" target='_blank'>Cython</a></li><li>&sdot;</li>
+                                <li><a href="http://www.tkdocs.com/index.html" target='_blank'>Tk</a></li><li>&sdot;</li>
+                                <li><a href="http://click.pocoo.org" target='_blank'>Click</a></li><li>&sdot;</li>                 
                                 <li><a href="http://flask.pocoo.org" target='_blank'>Flask</a></li>
                             </ul>
                         </li>                   
@@ -269,6 +279,12 @@
                     <div class="btn-group">                                                 
                         <a href="https://github.com/yoavram/Py4Eng" class="btn btn-default btn-lg">
                             <i class="fa fa-github fa-fw"></i> Course repo
+                        </a>                        
+                        <a href="https://speakerdeck.com/yoavram/introduction-to-python-for-scientific-computing" class="btn btn-default btn-lg">
+                            <i class="fa fa-caret-square-o-right fa-fw"></i> Introduction
+                        </a>
+                        <a href="http://mybinder.org/repo/yoavram/Py4Eng/tree/sessions/ML.ipynb" class="btn btn-default btn-lg" title="Loading might take several minutes...">
+                            <i class="fa fa-laptop fa-fw"></i> Preview
                         </a>
                     </div>
                 </p>
@@ -512,7 +528,7 @@
                             <ul class="list-inline">
                                 <li><a href="http://www.numpy.org/" target='_blank'>Numpy</a></li><li>&sdot;</li>
                                 <li><a href="http://scipy.org/scipylib/index.html" target='_blank'>SciPy</a></li><li>&sdot;</li>
-                                <li><a href="http://matplotlib.org/" target='_blank'>Matplotlib</a></li><li>&sdot;</li>                                
+                                <li><a href="http://matplotlib.org/" target='_blank'>Matplotlib</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -659,6 +675,11 @@
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                    <li>
+                        <a href="javascript:$('#speakerDeckModal').modal('toggle');" target="_blank"> Why Python?</a>
+                    </li>
                 </ul>                     
 
                 <ul class="list-inline">
@@ -693,6 +714,23 @@
         <i class="fa fa-chevron-up"></i>
     </a>
 </div>
+
+<!-- SpeakerDeck modal -->
+<div class="modal fade" id="speakerDeckModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content" style="padding: 0 0 0 0">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">&nbsp;<i class="fa fae-python fa-fw hidden-xs"></i> Why Python?</h4>
+    </div>
+    <div class="modal-body" id="speakerDeckModelDiv">        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+    </div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!-- Form success modal -->
 <div class="modal fade" id="formSuccessModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -770,6 +808,16 @@ $("#contactForm").submit(function(e) {
 });
 </script>
 
+
+<!-- SpeakerDeck modal on shown -->
+<script>
+    $(document).ready(function(){
+        $('#speakerDeckModal').on('shown.bs.modal', function(){
+            $('#speakerDeckModelDiv').html(
+                '<script async class="speakerdeck-embed" data-id="64cd2b473f624e10ae17c7bf224b5925" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js">');
+        });
+    });
+</script>
 
 <!-- Random images -->
 <script>
