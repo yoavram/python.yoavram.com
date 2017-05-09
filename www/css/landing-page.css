@@ -217,7 +217,8 @@ img.logo {
 #quote-carousel {
   padding: 0 10px 30px 10px;
   margin-top: 30px;
-  text-align:center;
+  text-align: center;
+  font-size: medium;
 }
 /* indicator position */
 #quote-carousel .carousel-indicators {
@@ -237,20 +238,12 @@ img.logo {
   width:10px;
   margin-bottom:1px;
 }
-/* typography */
-h1 {
-  text-align:center;
-  margin-bottom:-20px !important;
-}
-p {
-  font-style:italic;
-}
 /* logo images */
 .carousel-img {
     height: 50px;
     width: auto;
 }
 .carousel-inner{
-  min-height: 240px !important;
+  min-height: 260px !important;
   margin-top:-20px !important;
 }
