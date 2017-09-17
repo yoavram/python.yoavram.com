@@ -97,7 +97,7 @@
             <a href="javascript:$('#speakerDeckModal').modal('toggle');" target="_blank"><i class="fa fae-python fa-fw hidden-xs"></i> Why Python?</a>
           </li>
           <li>
-            <a href="http://julialang.org" target="_blank"><span class="badge">J</span> Julia, too!</a>
+            <a href="javascript:$('#julia-tab').tab('show'); window.location.href='#courses';" target="_blank"><span class="badge">J</span> Julia, too!</a>
           </li>
         </ul>
       </div>
@@ -337,7 +337,7 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
 </div>
 </div>
 
-<a  name="courses"></a>
+<a name="courses"></a>
 <div class="content-section-b">
 
   <div class="container" >
@@ -348,12 +348,12 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
         </h1>
         <hr class="section-title-spacer">
          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#Py4Eng" aria-controls="home" role="tab" data-toggle="tab">Py4Eng</a></li>
-            <li role="presentation"><a href="#1DayPy" aria-controls="profile" role="tab" data-toggle="tab">1DayPy</a></li>
-            <li role="presentation"><a href="#MLDLPy" aria-controls="profile" role="tab" data-toggle="tab">MLDLPy</a></li>
-            <li role="presentation"><a href="#Py4Life" aria-controls="profile" role="tab" data-toggle="tab">Py4Life</a></li>
-            <li role="presentation"><a href="#Julia" aria-controls="profile" role="tab" data-toggle="tab">Julia</a></li>
+          <ul class="nav nav-tabs" role="tablist" id="courses-tabs">
+            <li role="presentation" class="active"><a href="#Py4Eng" aria-controls="home" role="tab" data-toggle="tab">Python for Engineers</a></li>
+            <li role="presentation"><a href="#1DayPy" aria-controls="profile" role="tab" data-toggle="tab">Introduction to Python</a></li>
+            <li role="presentation"><a href="#MLDLPy" aria-controls="profile" role="tab" data-toggle="tab">Python Machine Learning</a></li>
+            <li role="presentation"><a href="#Py4Life" aria-controls="profile" role="tab" data-toggle="tab">Python for Biologists</a></li>
+            <li role="presentation"><a href="#Julia" aria-controls="profile" role="tab" data-toggle="tab" id="julia-tab">NEW! Julia</a></li>
           </ul>
       </div>
     </div>
@@ -461,7 +461,7 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
         <div role="tabpanel" class="tab-pane" id="1DayPy">
           
                 <h2 class="section-heading">
-                    Problem Solving with Python
+                    Introduction to Python
                 </h2>
                 <h3 class="section-heading">
                     One Day Workshop on Data Science with Python for Developers and Engineers
@@ -591,14 +591,13 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
         <!-- Py4Life -->
         <div role="tabpanel" class="tab-pane" id="Py4Life">
           <h2 class="section-heading">
-                    Python for Life Sciences
+                    Python for Biologists
                 </h2>
                 <h3 class="section-heading">
-                    Python Programming for Biology Graduate Students
+                    Python Programming for Life Science Researchers
                 </h3>
                 <p class="lead">
-                    The course is intended for biology graduate students interested in extending their knowledge and skills in 
-                    programming and computational biology.
+                    The course is intended for researchers in biology and medicine interested in extending their knowledge and skills in programming and computational biology.
                 </br>
                 The course was developed and taught at the <a href="https://en-lifesci.tau.ac.il/" target="_blank">Faculty of Life Sciences</a> 
                 in Tel-Aviv University during Spring semester 2015.
@@ -657,7 +656,7 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
         <!-- Julia -->
         <div role="tabpanel" class="tab-pane" id="Julia">
           <h2 class="section-heading">
-              Julia <span class="label label-info">NEW!</span>
+              Numerical Computing with Julia
             </h2>
             <h3 class="section-heading">
               Julia Programming for Engineers and Data Scientists
