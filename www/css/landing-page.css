@@ -247,3 +247,18 @@ img.logo {
   min-height: 260px !important;
   margin-top:-20px !important;
 }
+/* idan additions */
+
+p, .lead {
+    line-height: 2 !important;
+}
+
+.tab-pane ul {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.content-section-a {
+    min-height: 602px;
+}
