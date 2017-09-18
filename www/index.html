@@ -85,6 +85,9 @@
             <a href="#testimonials"><i class="fa fa-thumbs-up fa-fw hidden-xs"></i> Testimonials</a>
           </li>
           <li>
+            <a href="#videos"><i class="fa fa-youtube-play fa-fw hidden-xs"></i> Videos</a>
+          </li>
+          <li>
             <a href="#courses"><i class="fa fa-graduation-cap fa-fw hidden-xs"></i> Courses</a>
           </li>
           <li>
@@ -97,7 +100,7 @@
             <a href="javascript:$('#speakerDeckModal').modal('toggle');" target="_blank"><i class="fa fae-python fa-fw hidden-xs"></i> Why Python?</a>
           </li>
           <li>
-            <a href="javascript:$('#julia-tab').tab('show'); window.location.href='#courses';" target="_blank"><span class="badge">J</span> Julia, too!</a>
+            <a href="javascript:$('#julia-tab').tab('show'); window.location.href='#courses';" target="_blank"><span class="badge hidden-xs">J</span> Julia, too!</a>
           </li>
         </ul>
       </div>
@@ -337,8 +340,30 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
 </div>
 </div>
 
-<a name="courses"></a>
+<a name="videos"></a>
 <div class="content-section-b">
+
+  <div class="container" >
+    <div class="row" >
+      <div class="col-sm-12">
+        <h1 class="section-title">
+          Videos
+        </h1>
+        <hr class="section-title-spacer">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="col-sm-12 embed-responsive-item" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLo2YZ8A8fvtiYHkYPD8RWaiWVdo4GmNfq" wmode="Opaque" allowfullscreen></iframe>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+
+<a name="courses"></a>
+<div class="content-section-a">
 
   <div class="container" >
     <div class="row" >
@@ -731,7 +756,7 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
 
 <!-- .contact -->
 <a  name="contact"></a>
-<div class="content-section-a">
+<div class="contact-section">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -904,9 +929,10 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">&nbsp;<i class="fa fae-python fa-fw hidden-xs"></i> Why Python?</h4>
       </div>
-      <div class="modal-body" id="speakerDeckModelDiv">        
+      <div class="modal-body" id="speakerDeckModalDiv">        
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="speakerDeckModalYouTube"><i class="fa fa-lg fa-youtube-play hidden-xs"></i> YouTube</button>
         <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
       </div>
     </div><!-- /.modal-content -->
@@ -993,9 +1019,14 @@ using <em>Jupyter notebooks</em>, and all lectures include hands-on exercises. <
 <!-- SpeakerDeck modal on shown -->
 <script>
   $(document).ready(function(){
-    $('#speakerDeckModal').on('shown.bs.modal', function(){
-      $('#speakerDeckModelDiv').html(
+    $('#speakerDeckModal').on('shown.bs.modal', function() {
+      $('#speakerDeckModalDiv').html(
         '<script async class="speakerdeck-embed" data-id="4970692afede4ef4b4ab82977a814356" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js">');
+    });
+    $('#speakerDeckModalYouTube').on('click', function() {
+      $('#speakerDeckModalDiv').html(
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLo2YZ8A8fvtiYHkYPD8RWaiWVdo4GmNfq" frameborder="0" allowfullscreen></iframe>'  
+      );
     });
   });
 </script>
