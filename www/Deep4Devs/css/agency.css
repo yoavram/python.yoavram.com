@@ -226,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/deep4devs_header.jpg');
+  background-image: url('../img/header_bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -423,7 +423,8 @@ section h3.section-subheading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  background-color: #fed136;
+  /*background-color: #fed136;*/
+  background-color: white;
   color: white;
   border-radius: 100%;
   border: 7px solid #f1f1f1;
@@ -557,7 +558,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/deep4devs_contact.jpg');
+  background-image: url('../img/contact_bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
