@@ -566,10 +566,6 @@ section#apply {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transform:rotate(-180deg);
-}
-section#apply >*{
-  transform:rotate(180deg);
 }
 section#apply .section-heading {
   color: white;
