@@ -68,7 +68,7 @@
                         <a class="page-scroll" href="#about">About me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#apply">Apply</a>
+                        <a class="page-scroll" href="#register">Register</a>
                     </li>
                 </ul>
             </div>
@@ -84,7 +84,7 @@
                 <div class="intro-lead-in">Practical introduction to deep learning for software developers and engineers.</div>
                 <div class="intro-heading">Deep Learning for Developers</div>
                 <a href="#workshop" class="page-scroll btn btn btn-xl">Tell Me More</a>
-                <a href="#apply" class="page-scroll btn btn-xl btn-apply";">Apply Now</a>
+                <a href="#register" class="page-scroll btn btn-xl btn-register";">Register Now</a>
             </div>
         </div>
     </header>
@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Workshop</h2>
-                    <h3 class="section-subheading text-muted">The next workshop will start early December '17, <a href="#apply">apply now</a> to be updated.</h3>
+                    <h3 class="section-subheading text-muted">The next workshop will start early December '17, <a href="#register">register now</a> to be updated.</h3>
                 </div>
             </div>
             <div class="row text-center">                
@@ -328,19 +328,19 @@
     </section>
 
     <!-- Apply Section -->
-    <section id="apply" class="bg-light-gray">
+    <section id="register" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Apply</h2>
-                    <h3 class="section-subheading">Use this form to apply for the workshop and I'll get back to you shortly.
+                    <h2 class="section-heading">Register</h2>
+                    <h3 class="section-subheading">Use this form to reserve a seat at the next workshop.
                         <br>
-                        You can also <a href="mailto:yoav@yoavram.com">email me</a> directly.</h3>
+                        You can also <a href="mailto:yoav@yoavram.com">email me</a> directly with questions or requests.</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="applicationForm" novalidate>
+                    <form name="sentMessage" id="registerForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -355,17 +355,26 @@
                                     <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="tel" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Number of Participants *" id="num_participants" name="num_participants" required data-validation-required-message="Please enter your phone number." min="1" max="15" step="1" value="1">                                    
+                                    <p class="help-block">Number of expected participants</p>
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required name="message" data-validation-required-message="Please enter a message (optional)."></textarea>
+                                    <textarea class="form-control" placeholder="Your Message (optional)" id="message" name="message" rows="10"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-sm" placeholder="How did you get here? (optional)" id="how" name="how"></input>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl btn-apply">Apply</button>
+                                <button type="submit" class="btn btn-xl btn-apply">Register</button>
                             </div>
                         </div>
                     </form>
@@ -464,7 +473,7 @@
 
     <!-- Contact form -->
     <script>
-      $("#contactForm").submit(function(e) {
+      $("#registerForm").submit(function(e) {
         $.ajax(
         {
           url : "//formspree.io/yoav@yoavram.com",
@@ -472,11 +481,13 @@
           dataType: "json",
           data:
           {
-            message: $('#contactForm #message').val(),
-            name: $('#contactForm #name').val(),
-            email: $('#contactForm #email').val(),
-            tel: $('#contactForm #tel').val(),
-            _replyto: $('#contactForm #email').val(),
+            message: $('#registerForm #message').val(),
+            name: $('#registerForm #name').val(),
+            email: $('#registerForm #email').val(),
+            tel: $('#registerForm #tel').val(),
+            num_participants: $('#registerForm #num_participants').val(),
+            how: $('#registerForm #how').val(),
+            _replyto: $('#registerForm #email').val(),
             _subject: "Contact - Deep4Devs"
           },
           success: function(data, textStatus, jqXHR)

@@ -146,7 +146,7 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
-.btn-apply {
+.btn-register {
   background-color: #5CB85C !important;
   border-color: #5CB85C !important;
 }
@@ -560,63 +560,63 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
-section#apply {
+section#register {
   background-color: #222222;
-  background-image: url('../img/apply_bg.jpg');
+  background-image: url('../img/register_bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section#apply .section-heading {
+section#register .section-heading {
   color: white;
 }
-section#apply .section-subheading {
+section#register .section-subheading {
   color: white;
 }
-section#apply .form-group {
+section#register .form-group {
   margin-bottom: 25px;
 }
-section#apply .form-group input,
-section#apply .form-group textarea {
+section#register .form-group input,
+section#register .form-group textarea {
   padding: 20px;
 }
-section#apply .form-group input.form-control {
+section#register .form-group input.form-control {
   height: auto;
 }
-section#apply .form-group textarea.form-control {
-  height: 236px;
+section#register .form-group textarea.form-control {
+  /*height: 236px;*/
 }
-section#apply .form-control:focus {
+section#register .form-control:focus {
   border-color: #fed136;
   box-shadow: none;
 }
-section#apply ::-webkit-input-placeholder {
+section#register ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   /*color: #eeeeee;*/
 }
-section#apply :-moz-placeholder {
+section#register :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   /*color: #eeeeee;*/
 }
-section#apply ::-moz-placeholder {
+section#register ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   /*color: #eeeeee;*/
 }
-section#apply :-ms-input-placeholder {
+section#register :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   /*color: #eeeeee;*/
 }
-section#apply .text-danger {
+section#register .text-danger {
   color: #e74c3c;
 }
 footer {
