@@ -146,7 +146,7 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
-.btn-register {
+.btn-contact {
   background-color: #5CB85C !important;
   border-color: #5CB85C !important;
 }
@@ -560,63 +560,63 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
-section#register {
+section#contact {
   background-color: #222222;
-  background-image: url('../img/register_bg.jpg');
+  background-image: url('../img/contact_bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section#register .section-heading {
+section#contact .section-heading {
   color: white;
 }
-section#register .section-subheading {
+section#contact .section-subheading {
   color: white;
 }
-section#register .form-group {
+section#contact .form-group {
   margin-bottom: 25px;
 }
-section#register .form-group input,
-section#register .form-group textarea {
+section#contact .form-group input,
+section#contact .form-group textarea {
   padding: 20px;
 }
-section#register .form-group input.form-control {
+section#contact .form-group input.form-control {
   height: auto;
 }
-section#register .form-group textarea.form-control {
+section#contact .form-group textarea.form-control {
   /*height: 236px;*/
 }
-section#register .form-control:focus {
+section#contact .form-control:focus {
   border-color: #fed136;
   box-shadow: none;
 }
-section#register ::-webkit-input-placeholder {
+section#contact ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   /*color: #eeeeee;*/
 }
-section#register :-moz-placeholder {
+section#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   /*color: #eeeeee;*/
 }
-section#register ::-moz-placeholder {
+section#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   /*color: #eeeeee;*/
 }
-section#register :-ms-input-placeholder {
+section#contact :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   /*color: #eeeeee;*/
 }
-section#register .text-danger {
+section#contact .text-danger {
   color: #e74c3c;
 }
 footer {

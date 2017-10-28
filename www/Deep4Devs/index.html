@@ -68,7 +68,7 @@
                         <a class="page-scroll" href="#about">About me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#register">Register</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -84,7 +84,7 @@
                 <div class="intro-lead-in">Practical introduction to deep learning for software developers and engineers.</div>
                 <div class="intro-heading">Deep Learning for Developers</div>
                 <a href="#workshop" class="page-scroll btn btn btn-xl">Tell Me More</a>
-                <a href="#register" class="page-scroll btn btn-xl btn-register";">Register Now</a>
+                <a href="#contact" class="page-scroll btn btn-xl btn-contact";">Contact Me</a>
             </div>
         </div>
     </header>
@@ -94,8 +94,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Workshop</h2>
-                    <h3 class="section-subheading text-muted">The next workshop will start early December '17, <a href="#register">register now</a> to be updated.</h3>
+                    <h2 class="section-heading">Workshop</h2>                    
+                    <h3 class="section-subheading text-muted">Next workshop starts early December '17 in Tel-Aviv.</br>
+                    <a href="#contact">Contact me</a> to be updated about dates and location.</h3>
                 </div>
             </div>
             <div class="row text-center">                
@@ -132,7 +133,7 @@
                     </span>
                     <h4 class="service-heading">Time</h4>
                     <p class="service-text text-muted">
-                        Two days, 16 hours. Next workshop starts early December '17.
+                        Two days, 16 hours of interactive sessions. <br>                        
                     <br><br></p>
                 </div>
                 <div class="col-md-4">
@@ -327,20 +328,20 @@
         </div>
     </section>
 
-    <!-- Apply Section -->
-    <section id="register" class="bg-light-gray">
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Register</h2>
-                    <h3 class="section-subheading">Use this form to reserve a seat at the next workshop.
-                        <br>
-                        You can also <a href="mailto:yoav@yoavram.com">email me</a> directly with questions or requests.</h3>
+                    <h2 class="section-heading">Contact</h2>
+                    <h3 class="section-subheading">For questions, requests, and to reserve a seat in the next workshop, user this form and I'll get back to you ASAP.
+                    <br>
+                    You can also <a href="mailto:yoav@yoavram.com">email me</a> directly.</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="registerForm">
+                    <form name="sentMessage" id="contactForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -374,7 +375,7 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl btn-apply">Register</button>
+                                <button type="submit" class="btn btn-xl btn-contact">Contact</button>
                             </div>
                         </div>
                     </form>
@@ -473,7 +474,7 @@
 
     <!-- Contact form -->
     <script>
-      $("#registerForm").submit(function(e) {
+      $("#contactForm").submit(function(e) {
         $.ajax(
         {
           url : "//formspree.io/yoav@yoavram.com",
@@ -481,13 +482,13 @@
           dataType: "json",
           data:
           {
-            message: $('#registerForm #message').val(),
-            name: $('#registerForm #name').val(),
-            email: $('#registerForm #email').val(),
-            tel: $('#registerForm #tel').val(),
-            num_participants: $('#registerForm #num_participants').val(),
-            how: $('#registerForm #how').val(),
-            _replyto: $('#registerForm #email').val(),
+            message: $('#contactForm #message').val(),
+            name: $('#contactForm #name').val(),
+            email: $('#contactForm #email').val(),
+            tel: $('#contactForm #tel').val(),
+            num_participants: $('#contactForm #num_participants').val(),
+            how: $('#contactForm #how').val(),
+            _replyto: $('#contactForm #email').val(),
             _subject: "Contact - Deep4Devs"
           },
           success: function(data, textStatus, jqXHR)
