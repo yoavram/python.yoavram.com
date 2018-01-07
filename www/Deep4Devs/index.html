@@ -86,17 +86,24 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Introduction to deep learning</br>
                 for professional software developers and engineers.</div>
-                <div class="intro-heading">Deep Learning for Developers</div>
-                
+                <div class="intro-heading">Deep Learning for Developers
+                <h4 class="intro-colored-text">Next workshop in
+                    Tel Aviv, February 18 and 21, hosted by <a href="http://saips.co.il/" target="_blank" class="line">SAIPS</a>
+                </h4>
+                <h4>
+                    Future workshops in Tel Aviv and SF Bay Area
+                </h4>
+                </div>
                 <div class="btn-group-xl hidden-xs">
                 <a href="#workshop" class="page-scroll btn btn-xl">More Info</a>
-                <a href="#contact" class="page-scroll btn btn-xl  btn-contact";">Contact Me</a>
+                <a href="#contact" class="page-scroll btn btn-xl  btn-contact";">Reserve a Seat</a>
                 </div>
 
                 <div class="btn-group-xl btn-group-vertical visible-xs">
                 <a href="#workshop" class="page-scroll btn btn-xl">More Info</a>
-                <a href="#contact" class="page-scroll btn btn-xl  btn-contact";">Contact Me</a>
+                <a href="#contact" class="page-scroll btn btn-xl  btn-contact";">Reserve a Seat</a>
                 </div>
+				
             </div>
         </div>
     </header>
@@ -105,18 +112,16 @@
     <section id="workshop" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Workshop</h2>
-                    <h3 class="section-subheading text-muted">
-                    <!-- Introduction to deep learning 
-                    for professional software developers and engineers.
-                    </br>   -->                  
-                     <strong><a href="#contact">Contact me</a></strong> to be updated about dates and locations or to discuss a workshop at your company.
-                    </br>
-                    <strong>
-                    Next workshop starts January 2018 in Tel-Aviv.
-                    </strong>                    
-                    </h3>
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <p><h2 class="section-heading">Workshop</h2>
+                    <h4 class="section-subheading text-muted">
+                    <ul class="list-inline">
+                    <li><a href="#contact">Reserve a seat:</a></li>
+                	<li>Tel Aviv, February 18 and 21, hosted by <a href="http://saips.co.il/" target="_blank" class="line">SAIPS</a>.</li>
+                	</ul>
+                    <strong><a href="#contact">Contact me</a></strong> to be updated about future workshops or discuss a workshop at your company.                    
+                    </h4>
+                </p>
                 </div>
             </div>
             <div class="row text-center">                
@@ -207,7 +212,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Day 2</h4>
-                                    <h4 class="subheading">Feed forward, Convolutional and Recurrent Networks</h4>
+                                    <h4 class="subheading">Feed forward, Convolutional and Recurrent Neural Networks</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Training and using neural networks using Python, TensorFlow, and Keras.</p>
@@ -301,10 +306,10 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -332,8 +337,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="large text-muted">
-                        I'm a postdoctoral fellow at Stanford University with a PhD in Mathematical &amp; Computational Biology from Tel-Aviv University.
-                        I've been teaching Python in Academia and Industry for the past 7 years, including at Tel-Aviv University, Applied Materials, and KLA-Tencor.
+                        I'm a postdoctoral fellow at Stanford University with a PhD in Mathematical &amp; Computational Biology from Tel Aviv University.
+                        I've been teaching Python in Academia and Industry for the past 7 years, including at Tel Aviv University, Applied Materials, and KLA-Tencor.
                     </p>
                     <p class="large text-muted">
                         I enjoy solving and communicating complex problems and ideas. I develop and deliver Python programming workshops focused on numerical, scientific, and statistical applications in Israel, California, and anywhere else I'm needed.
@@ -347,14 +352,23 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-light-gray">
+    <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
+                	<p>
                     <h2 class="section-heading">Contact</h2>
-                    <h3 class="section-subheading">For questions, requests, and to reserve a seat in the next workshop, use this form and I'll get back to you ASAP.<br>
+                    <h4 class="section-subheading">
+                    Use this form to reserve a seat in the next workshop: <u>Tel Aviv, February 18 and 21</u>.
+                	</h4>
+                	<h4 class="section-subheading">
                     We can also discuss workshops at your company.
-                    Feel free to <a href="mailto:yoav@yoavram.com">email me</a> directly.</h3>
+                    </h4>
+                    <h4 class="section-subheading">
+                    Feel free to <a href="mailto:yoav@yoavram.com">email me</a> directly.
+                	</h4>
+                    </br>
+                	</p>
                 </div>
             </div>
             <div class="row">
@@ -371,11 +385,11 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="tel" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="Number of Participants *" id="num_participants" name="num_participants" required data-validation-required-message="Please enter your phone number." min="1" max="15" step="1" value="1">                                    
+                                    <input type="number" class="form-control" placeholder="Number of Participants *" id="num_participants" name="num_participants" required data-validation-required-message="Please enter number of participants." min="1" max="15" step="1" value="1">                                    
                                     <p class="help-block text-danger lead">Number of expected participants</p>
                                     <p class="help-block text-danger"></p>
                                 </div>
@@ -501,7 +515,7 @@
             message: $('#contactForm #message').val(),
             name: $('#contactForm #name').val(),
             email: $('#contactForm #email').val(),
-            tel: $('#contactForm #tel').val(),
+            phone: $('#contactForm #phone').val(),
             num_participants: $('#contactForm #num_participants').val(),
             how: $('#contactForm #how').val(),
             _replyto: $('#contactForm #email').val(),

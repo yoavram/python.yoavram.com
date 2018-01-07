@@ -36,6 +36,16 @@ a:active,
 a.active {
   color: #fec503;
 }
+a.line,
+a.line:focus,
+a.line:active {
+  color: inherit;
+  text-decoration: underline;
+}
+a.line:hover {
+  color: inherit;
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -778,4 +788,7 @@ svg.unsplash {
   vertical-align:middle;
   top:-1px;
   fill:white;
+}
+.intro-colored-text {
+  color: #fed136;
 }
