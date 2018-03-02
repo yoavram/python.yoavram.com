@@ -83,15 +83,16 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Introduction to deep learning</br>
-                for professional software developers and engineers.</div>
+            <div class="intro-text"> 
+            	<div class="intro-lead-in">Introduction to deep learning</br>
+                for professional software developers and engineers.
+            	</div>               
                 <div class="intro-heading">Deep Learning for Developers
-                <h4 class="intro-colored-text">
+               <!--  <h4 class="intro-colored-text">
                     <mark>SOLD OUT</mark> workshop in
                     Tel Aviv, February 18 and 21, hosted by <a href="http://saips.co.il/" target="_blank" class="line">SAIPS</a>
-                </h4>
-                <h4>
+                </h4> -->
+                <h4 class="intro-colored-text">
                     Future workshops in Tel Aviv and SF Bay Area
                 </h4>
                 </div>
@@ -103,35 +104,44 @@
                 <div class="btn-group-xl btn-group-vertical visible-xs">
                 <a href="#workshop" class="page-scroll btn btn-xl">More Info</a>
                 <a href="#contact" class="page-scroll btn btn-xl  btn-contact";">Contact</a>
-                </div>				
-                <div class="col-md-12">
-                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                </div>
+            	<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+					<!-- Bottom Carousel Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#quote-carousel" data-slide-to="1"></li>
+						<!-- <li data-target="#quote-carousel" data-slide-to="2"></li>
+						<li data-target="#quote-carousel" data-slide-to="3"></li> -->
+					</ol>
 
-                        <!-- Bottom Carousel Indicators -->
-                        <!-- <ol class="carousel-indicators">
-                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#quote-carousel" data-slide-to="1"></li>
-                            <li data-target="#quote-carousel" data-slide-to="2"></li>
-                        </ol> -->
+		          	<!-- Carousel Slides / Quotes -->
+		          	<div class="carousel-inner">
 
-                        <!-- Carousel Slides / Quotes -->
-                        <div class="carousel-inner">
-
-                            <!-- Quote 1 -->
-                            <div class="item active">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>&ldquo;Yoav was invited to give a Deep Learning workshop at our offices as extra curriculum for the employees. The workshop was very thorough, engaging, and super interesting.Yoav really demystified deep learning for us, transforming it to something we can all understand, explain, and even use in our everyday work.
-                                        If you want to know more about deep learning, really understand what goes on under the hood, and stop being afraid of stuff like neural networks, model training, and TensorFlow, this is the workshop for you! Highly recommended!&rdquo;</p>
-                                        <strong>Ofer Moshaioff, Senior Software Engineer, Houzz</strong>
-                                    </div>
-                                </div>
-                            </div>  
+			            <!-- Quote Ofer -->
+			            <div class="item active">
+			              	<div class="row">
+				                <div class="col-sm-10 col-sm-offset-1">
+				                	<p>&ldquo;Yoav was invited to give a Deep Learning workshop at our offices as extra curriculum for the employees. The workshop was very thorough, engaging, and super interesting.Yoav really demystified deep learning for us, transforming it to something we can all understand, explain, and even use in our everyday work.
+	                                If you want to know more about deep learning, really understand what goes on under the hood, and stop being afraid of stuff like neural networks, model training, and TensorFlow, this is the workshop for you! Highly recommended!&rdquo;</p>
+	                                <strong>Ofer Moshaioff, Senior Software Engineer, Houzz</strong>
+	                            </div>
+                        	</div>
                         </div>
-                    </div>                          
+                        <!-- Quote Uri -->
+			            <div class="item">
+			              	<div class="row">
+			                	<div class="col-sm-10 col-sm-offset-1">
+				                	<p>&ldquo;I attended Yoav's Deep4Devs workshop as part of our company's aim to add neural network-based algorithms to our machine learning arsenal. I found the workshop to be of very high-value for me, mainly due to Yoav's focus on understanding the inner workings of machine learning metrics in general, and specifically neural networks. The use of Jupyter notebooks with written explanations alongside the code samples kept the workshop practical, and ensured that I'll be able to revisit covered topics in the future.
+									The workshop doesn't try to treat neural networks as black-boxes to be used off-the-shelf, but rather gives the participants intuition and knowledge on the trade-offs in neural network design and the background needed to tailor them to specific needs.
+									Yoav's knowledge of the subject is very impressive and thorough and you'll be hard pressed to find subject-relevant questions which he won't be able to answer.&rdquo;</p>
+	                                <strong>Uri Barenholz</strong>
+                            	</div>
+                        	</div>
+                        </div>
+                	</div>
                 </div>
             </div>
-        </div>
+		</div>
     </header>
 
     <!-- workshop Section -->
@@ -523,6 +533,16 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <!-- Testimonials carousel -->
+    <script>
+      $(document).ready(function() {
+        //carousel options      
+        $('#quote-carousel').carousel({
+          pause: "hover", interval: 10000,
+        });
+      });
+    </script>
 
     <!-- Contact form -->
     <script>
