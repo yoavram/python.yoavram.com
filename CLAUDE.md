@@ -8,8 +8,8 @@ The landing page for Yoav Ram's corporate Python / ML training (python.yoavram.c
 
 ## Layout
 
-- `www/index.html` is the home page: hero, clients, workshop cards, how I teach, testimonials, about, contact, footer.
-- `www/modules/<slug>/index.html` is one page per workshop (six). The site calls them "workshops" but the URL path is still `/modules/`. The pages share the same head, header and footer markup, copied by hand. When you change shared markup such as the nav or footer, change all seven pages.
+- `www/index.html` is the home page: hero, about, clients, workshop cards, how I teach, testimonials, contact, footer.
+- `www/modules/<slug>/index.html` is one page per workshop (nine). The site calls them "workshops" but the URL path is still `/modules/`. The pages share the same head, header and footer markup, copied by hand. When you change shared markup such as the nav or footer, change all ten pages.
 - `www/css/site.css` is the only stylesheet. Colours are tokens on `:root`, and the dark theme follows `prefers-color-scheme`.
 - `www/img/` keeps the portrait, `logo.png` (the Open Graph image) and the favicon set.
 - `content/DRAFT.md` is the copy the site was first built from (untracked). The HTML is now the source of truth, so edit it directly. Keep `DRAFT.md` as a reference only if you want, and say so if the two diverge.

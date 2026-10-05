@@ -26,8 +26,8 @@
 <a class="brand" href="/"><span class="name">Yoav Ram, PhD</span><span class="tag"> | Data Science &amp; Scientific Computing: Training &amp; Consulting</span></a>
 <nav aria-label="Main">
 <ul>
-<li><a href="/#workshops">Workshops</a></li>
 <li><a href="/#about">About</a></li>
+<li><a href="/#workshops">Workshops</a></li>
 <li><a href="/#how-i-teach">How I teach</a></li>
 <li><a href="/#testimonials">Testimonials</a></li>
 <li><a href="/#contact">Contact</a></li>
@@ -42,6 +42,19 @@
 <h1>Machine Learning &amp; AI training for R&amp;D Teams</h1>
 <p class="sub">Hands-on, taught by a practising scientist. For engineering and R&amp;D teams in ML, AI, algorithm, vision, metrology, semiconductor, and hardware companies.</p>
 <p class="actions"><a class="btn btn-primary" href="#contact">Plan a workshop for your team</a> <a class="btn btn-secondary" href="#workshops">Browse workshops</a></p>
+</div>
+</section>
+<section id="about" class="section alt">
+<div class="wrap about">
+<img src="/img/yoav-ram.jpg" width="300" height="452" alt="Portrait of Yoav Ram" class="portrait">
+<div>
+<h2>About the instructor</h2>
+<ul>
+<li>Assistant Professor, Faculty of Life Sciences, Tel Aviv University</li>
+<li>Postdoc at Stanford University; PhD in Mathematical &amp; Computational Biology, Tel Aviv University</li>
+<li>Teaching Python and Data Science since 2011, in academia and industry; Excellence in Teaching awards from Tel Aviv University and IDC Herzliya</li>
+</ul>
+</div>
 </div>
 </section>
 <section class="clients" aria-labelledby="clients-h">
@@ -64,7 +77,8 @@
 <section id="workshops" class="section">
 <div class="wrap">
 <h2>Workshops</h2>
-<p class="intro">Six workshops, each of which can be taught on its own or combined with others. Every workshop is tailored to your team.</p>
+<p class="intro">Nine workshops, each of which can be taught on its own or combined with others. Every workshop is tailored to your team.</p>
+<p class="custom">Workshops can also be held online, on Zoom or Teams, in 3-hour meetings.</p>
 <p class="custom">Custom topics <a href="#contact">on request</a>.</p>
 <div class="cards">
 <article class="card">
@@ -75,27 +89,57 @@
 <li>Analyse data, signals, images and time series with NumPy, pandas and SciPy.</li>
 <li>Test your code and set up reproducible environments.</li>
 </ul>
-<p class="meta"><strong>Typical length:</strong> 1–5 days</p>
+<p class="meta"><strong>Typical length:</strong> 2–4 days</p>
 </article>
 <article class="card">
-<h3><a href="/modules/deep-learning/">Deep Learning from First Principles</a></h3>
+<h3><a href="/modules/modelling-simulation/">Modelling and Simulation</a></h3>
+<p class="for">For engineers and scientists who model dynamic systems.</p>
+<ul>
+<li>Build and solve ODE and discrete-time models, and analyse their stability.</li>
+<li>Simulate stochastic systems, and make the simulations fast.</li>
+<li>Fit models to data with maximum likelihood.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> <mark class="todo">TODO(Yoav): duration</mark></p>
+</article>
+<article class="card">
+<h3><a href="/modules/intro-deep-learning/">Introduction to Deep Learning</a></h3>
 <p class="for">For developers and engineers who want to really understand neural networks.</p>
 <ul>
 <li>Derive neural networks from maximum likelihood and linear and logistic regression.</li>
-<li>Build and train feed-forward networks, CNNs and sequence models for images and time series.</li>
+<li>Build and train feed-forward networks and CNNs for images and time series.</li>
 <li>Explain what backpropagation is doing and why a model fails to train.</li>
 </ul>
-<p class="meta"><strong>Typical length:</strong> 2–3 days</p>
+<p class="meta"><strong>Typical length:</strong> 3 days</p>
 </article>
 <article class="card">
-<h3><a href="/modules/ml-evaluation-uncertainty/">Machine Learning Evaluation and Uncertainty</a></h3>
+<h3><a href="/modules/advanced-deep-learning/">Advanced Deep Learning</a></h3>
+<p class="for">The next step after the introduction: transfer learning, self-supervised generative models, imbalanced data and calibration.</p>
+<ul>
+<li>Adapt pretrained models with transfer learning and fine-tuning.</li>
+<li>Learn from unlabelled data with self-supervised generative models: autoencoders, GANs and normalizing flows.</li>
+<li>Handle imbalanced data, and calibrate predicted probabilities.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> 2 days</p>
+</article>
+<article class="card">
+<h3><a href="/modules/bayesian-inference/">Bayesian Inference</a></h3>
+<p class="for">For engineers and scientists who fit models to data.</p>
+<ul>
+<li>Explain Bayesian inference and run MCMC.</li>
+<li>Fit dynamic models with Bayesian inference.</li>
+<li>Infer parameters from simulations, with ABC and neural density estimation.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> <mark class="todo">TODO(Yoav): duration</mark></p>
+</article>
+<article class="card">
+<h3><a href="/modules/ml-evaluation/">Machine Learning Evaluation</a></h3>
 <p class="for">For teams working with ML models.</p>
 <ul>
 <li>Design held-out evaluation that matches real use.</li>
 <li>Find leakage and selection bias before your customers do.</li>
-<li>Quantify uncertainty with Bayesian inference, calibration and conformal prediction.</li>
+<li>Compare models honestly.</li>
 </ul>
-<p class="meta"><strong>Typical length:</strong> 2–3 days</p>
+<p class="meta"><strong>Typical length:</strong> 1–2 days</p>
 </article>
 <article class="card">
 <h3><a href="/modules/open-set-learning/">Open-Set Learning: Metric Learning, Zero-Shot and Re-Identification</a></h3>
@@ -105,17 +149,7 @@
 <li>Classify zero-shot with CLIP, and learn your own embedding with metric learning.</li>
 <li>Build and evaluate a re-identification pipeline.</li>
 </ul>
-<p class="meta"><strong>Typical length:</strong> 2 days</p>
-</article>
-<article class="card">
-<h3><a href="/modules/ml-coding-agents/">ML with Coding Agents</a></h3>
-<p class="for">For R&amp;D teams adopting AI-assisted coding.</p>
-<ul>
-<li>Specify tasks so an agent's output can be checked.</li>
-<li>Review and verify agent-written code.</li>
-<li>Deliver a ML analysis with an agent without silent errors.</li>
-</ul>
-<p class="meta"><strong>Typical length:</strong> 1 day</p>
+<p class="meta"><strong>Typical length:</strong> 2 full days</p>
 </article>
 <article class="card">
 <h3><a href="/modules/llms-first-principles/">LLMs from First Principles</a></h3>
@@ -129,23 +163,20 @@
 </ul>
 <p class="meta"><strong>Typical length:</strong> 2 days</p>
 </article>
-</div>
-</div>
-</section>
-<section id="about" class="section alt">
-<div class="wrap about">
-<img src="/img/yoav-ram.jpg" width="300" height="452" alt="Portrait of Yoav Ram" class="portrait">
-<div>
-<h2>About the instructor</h2>
+<article class="card">
+<h3><a href="/modules/ml-coding-agents/">ML with Coding Agents</a></h3>
+<p class="for">For R&amp;D teams adopting AI-assisted coding.</p>
 <ul>
-<li>Assistant Professor, Faculty of Life Sciences, Tel Aviv University</li>
-<li>Postdoc at Stanford University; PhD in Mathematical &amp; Computational Biology, Tel Aviv University</li>
-<li>Teaching Python and Data Science since 2011, in academia and industry; Excellence in Teaching awards from Tel Aviv University and IDC Herzliya</li>
+<li>Specify tasks so an agent's output can be checked.</li>
+<li>Review and verify agent-written code.</li>
+<li>Deliver a ML analysis with an agent without silent errors.</li>
 </ul>
+<p class="meta"><strong>Typical length:</strong> 1 day</p>
+</article>
 </div>
 </div>
 </section>
-<section id="how-i-teach" class="section">
+<section id="how-i-teach" class="section alt">
 <div class="wrap">
 <h2>How I teach</h2>
 <ul class="points">
@@ -156,7 +187,7 @@
 </ul>
 </div>
 </section>
-<section id="testimonials" class="section alt">
+<section id="testimonials" class="section">
 <div class="wrap">
 <h2>Testimonials</h2>
 <div class="testimonials">
@@ -216,7 +247,7 @@
 </div>
 </div>
 </section>
-<section id="contact" class="section">
+<section id="contact" class="section alt">
 <div class="wrap contact">
 <h2>Contact</h2>
 <p class="intro">Tell me about your team and what you would like them to be able to do. A few lines are enough to start; I will reply to set up a scoping call.</p>
