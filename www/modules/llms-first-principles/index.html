@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LLMs from First Principles — Yoav Ram</title>
-<meta name="description" content="A two-day hands-on workshop for engineers and technical managers: tokenisation, transformers, pretraining, fine-tuning, reinforcement learning from rewards, and building a software-engineering agent, each small enough to run on a laptop.">
+<meta name="description" content="A hands-on workshop for engineers and technical managers: from basic transformers and character-level language models to a working nano-scale GPT, with fine-tuning, reinforcement learning and a software-engineering agent, each small enough to run on a laptop.">
 <link rel="canonical" href="https://python.yoavram.com/modules/llms-first-principles/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yoav Ram">
 <meta property="og:title" content="LLMs from First Principles — Yoav Ram">
-<meta property="og:description" content="A two-day hands-on workshop for engineers and technical managers: tokenisation, transformers, pretraining, fine-tuning, reinforcement learning from rewards, and building a software-engineering agent, each small enough to run on a laptop.">
+<meta property="og:description" content="A hands-on workshop for engineers and technical managers: from basic transformers and character-level language models to a working nano-scale GPT, with fine-tuning, reinforcement learning and a software-engineering agent, each small enough to run on a laptop.">
 <meta property="og:url" content="https://python.yoavram.com/modules/llms-first-principles/">
 <meta property="og:image" content="https://python.yoavram.com/img/logo.png">
 <meta name="color-scheme" content="light dark">
@@ -40,12 +40,14 @@
 <article class="wrap page">
 <p class="crumb"><a href="/#workshops">← All workshops</a></p>
 <h1>LLMs from First Principles</h1>
-<p class="for">For engineers and technical managers.</p>
+<p class="for">For engineers and technical managers: from basic transformers to a working nano-scale GPT.</p>
 <section>
 <h2>What you will be able to do</h2>
 <ul>
-<li>Explain how text becomes tokens and how a transformer processes them.</li>
-<li>Pretrain a small language model and see what it learns.</li>
+<li>Explain the basic structure of the transformer, compared with a feed-forward network.</li>
+<li>Build character-level language models, from RNNs and GRUs to the causal (autoregressive) transformer.</li>
+<li>Tokenise text with byte pair encoding.</li>
+<li>Pretrain a small GPT-style language model.</li>
 <li>Fine-tune it to follow instructions.</li>
 <li>Apply reinforcement learning from rewards, and explain how reward hacking arises.</li>
 <li>Build a minimal software-engineering (SWE) agent: a loop in which a model calls tools such as running commands.</li>
@@ -55,28 +57,35 @@
 </section>
 <section>
 <h2>Prerequisites</h2>
-<p>Python experience. <mark class="todo">TODO(Yoav): confirm level, and whether technical managers follow the coding or only the concepts</mark></p>
-</section>
-<section>
-<h2>Format and duration</h2>
-<p>2 days, on-site or remote. Hands-on.</p>
+<p>Python, and an introduction to deep learning, for example <a href="/modules/intro-deep-learning/">Introduction to Deep Learning</a>.</p>
 </section>
 <section>
 <h2>Outline</h2>
-<p>Four half-days.</p>
+<p>2 days, on-site or remote. Hands-on.</p>
 <ol>
-<li>Tokenisation and the transformer</li>
-<li>Pretraining</li>
-<li>Fine-tuning, and reinforcement learning from rewards, including reward hacking</li>
+<li>Set models: the basic structure of the transformer, compared with a feed-forward network</li>
+<li>Character-level language models: from RNNs and GRUs to the causal (autoregressive) transformer</li>
+<li>Tokenisation: byte pair encoding</li>
+<li>A full GPT: pretraining a small language model</li>
+<li>Fine-tuning to follow instructions</li>
+<li>Reinforcement learning from rewards, including reward hacking</li>
 <li>Building a SWE agent</li>
 </ol>
 </section>
 <section>
 <h2>Sample materials</h2>
-<p>Sample teaching materials are public on GitHub.</p>
 <ul>
-<li><a href="https://github.com/yoavram/nanochat">yoavram/nanochat</a> — A large language models course, from tokenisation and a small GPT to fine-tuning, reinforcement learning and a minimal software-engineering agent.</li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/sets.ipynb">Set models: feed-forward network, Deep Sets and Set Transformer</a></li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/RNN.ipynb">Recurrent neural networks</a></li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/GRU.ipynb">Gated recurrent units</a></li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/text-transformer.ipynb">Character-level transformer</a></li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/bpe-tokenizer.ipynb">Byte pair encoding tokenizer</a></li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/nanochat.ipynb">Pretraining a small GPT</a></li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/nanochat-sft.ipynb">Supervised fine-tuning</a></li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/nanochat-grpo.ipynb">Reinforcement learning from verifiable rewards</a></li>
+<li><a href="https://github.com/yoavram/nanochat/blob/main/minisweagent.ipynb">A minimal software-engineering agent</a></li>
 </ul>
+<p>More in <a href="https://github.com/yoavram/nanochat">yoavram/nanochat</a>.</p>
 </section>
 <section class="cta">
 <h2>Contact</h2>

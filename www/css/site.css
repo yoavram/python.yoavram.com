@@ -10,6 +10,9 @@
   --muted: #565d64;
   --line: #d9d9d1;
   --accent: #0a5c8a;
+  --row-1: #0a5c8a;
+  --row-2: #0b6a55;
+  --row-3: #6f3f9e;
   --on-accent: #ffffff;
   --todo: #ffe98a;
   --measure: 44rem;
@@ -24,6 +27,9 @@
     --muted: #9aa1a8;
     --line: #2d3236;
     --accent: #5ab4e5;
+    --row-1: #5ab4e5;
+    --row-2: #4fcfa6;
+    --row-3: #b9a0f0;
     --on-accent: #0b1114;
     --todo: #5c4d00;
   }
@@ -260,10 +266,31 @@ ol {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
-  margin: 1.5rem 0;
+  margin: 0 0 1rem;
 }
+
+.custom + .cards {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* each row of cards has its own colour */
+.row-1 { --row: var(--row-1); }
+.row-2 { --row: var(--row-2); }
+.row-3 { --row: var(--row-3); }
 
 .card {
   position: relative;
@@ -272,12 +299,13 @@ ol {
   padding: 1.25rem;
   background: var(--surface);
   border: 1px solid var(--line);
+  border-top: 4px solid var(--row, var(--accent));
   border-radius: 0.75rem;
 }
 
 /* the title is the link; its ::after stretches the click target over the whole card */
 .card h3 a {
-  color: var(--accent);
+  color: var(--row, var(--accent));
   text-decoration: none;
 }
 
@@ -289,7 +317,7 @@ ol {
 }
 
 .card:hover {
-  border-color: var(--accent);
+  border-color: var(--row, var(--accent));
 }
 
 .card:hover h3 a {
@@ -301,7 +329,7 @@ ol {
 }
 
 .card h3 a:focus-visible::after {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--row, var(--accent));
   outline-offset: 2px;
 }
 
