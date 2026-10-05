@@ -13,6 +13,8 @@
   --row-1: #0a5c8a;
   --row-2: #0b6a55;
   --row-3: #6f3f9e;
+  --feature: #b34700;
+  --feature-bg: #fff6ec;
   --on-accent: #ffffff;
   --todo: #ffe98a;
   --measure: 44rem;
@@ -30,6 +32,8 @@
     --row-1: #5ab4e5;
     --row-2: #4fcfa6;
     --row-3: #b9a0f0;
+    --feature: #ffb067;
+    --feature-bg: #2a2119;
     --on-accent: #0b1114;
     --todo: #5c4d00;
   }
@@ -456,6 +460,78 @@ ol {
 
 .programmes li + li {
   margin-top: 1rem;
+}
+
+/* a row of two cards uses two equal columns */
+@media (min-width: 56rem) {
+  .cards.two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* the featured workshop: a wide card on its own row, in a colour the other rows do not use */
+.cards.featured {
+  --row: var(--feature);
+}
+
+@media (min-width: 56rem) {
+  .cards.featured {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-featured {
+  background: var(--feature-bg);
+  border: 2px solid var(--feature);
+  border-top-width: 6px;
+  padding: 1.5rem;
+}
+
+.card-featured h3 {
+  font-size: 1.5rem;
+}
+
+.card-featured .badge {
+  align-self: flex-start;
+  justify-self: start;
+  margin: 0 0 0.5rem;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  background: var(--feature);
+  color: var(--bg);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.card-featured .for {
+  font-size: 1.05rem;
+}
+
+@media (min-width: 56rem) {
+  .card-featured {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: auto auto auto 1fr;
+    column-gap: 2.5rem;
+  }
+
+  .card-featured > * {
+    grid-column: 1;
+  }
+
+  .card-featured ul {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    align-self: center;
+    font-size: 1.05rem;
+  }
+
+  .card-featured .meta {
+    align-self: end;
+    margin-top: 0;
+  }
 }
 
 /* how I teach */
