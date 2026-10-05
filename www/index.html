@@ -1,1013 +1,239 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="description" content="Python training by an experienced instructor, with strong emphasis on scientific computating and the Scientific Python stack.">
-  <meta name="author" content="Yoav Ram">
-  <meta property="og:title" content="Yoav Ram </> Python Training" />
-  <meta property="og:description" content="Python training by an experienced instructor, with strong emphasis on scientific computating and the Scientific Python stack" />
-  <meta property="og:site_name" content="Yoav Ram </> Python Training" />
-  <meta property="og:url" content="http://python.yoavram.com" />
-  <meta property="og:image" content="https://python.yoavram.com//img/logo.png" />
-
-  <link rel="canonical" href="http://python.yoavram.com" />
-
-  <title>Yoav Ram &lt;/&gt; Python Training</title>
-
-  <!-- Favicon from http://www.favicon-generator.org/-->
-  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/img/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- Bootstrap Core CSS -->
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">    
-
-  <!-- Custom CSS -->
-  <link href="css/landing-page.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <link href="css/font-awesome-extension.min.css" rel="stylesheet" type="text/css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Machine Learning &amp; AI training for R&amp;D Teams — Yoav Ram</title>
+<meta name="description" content="Hands-on Python, machine learning and AI training for R&amp;D teams, taught by a practising scientist. Workshops on-site or remote, tailored to your team.">
+<link rel="canonical" href="https://python.yoavram.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yoav Ram">
+<meta property="og:title" content="Machine Learning &amp; AI training for R&amp;D Teams — Yoav Ram">
+<meta property="og:description" content="Hands-on Python, machine learning and AI training for R&amp;D teams, taught by a practising scientist. Workshops on-site or remote, tailored to your team.">
+<meta property="og:url" content="https://python.yoavram.com/">
+<meta property="og:image" content="https://python.yoavram.com/img/logo.png">
+<meta name="color-scheme" content="light dark">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/img/favicon/manifest.json">
+<link rel="stylesheet" href="/css/site.css">
 </head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-    <div class="container topnav">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand topnav" href="#">Yoav Ram <i class="fa fae-python fa-fw"></i> Python Training</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#about"><i class="fa fa-user fa-fw hidden-xs"></i> About</a>
-          </li>
-          <li>
-            <a href="#testimonials"><i class="fa fa-thumbs-up fa-fw hidden-xs"></i> Testimonials</a>
-          </li>
-          <li>
-            <a href="#videos"><i class="fa fa-youtube-play fa-fw hidden-xs"></i> Videos</a>
-          </li>
-          <li>
-            <a href="#courses"><i class="fa fa-graduation-cap fa-fw hidden-xs"></i> Courses</a>
-          </li>
-          <li>
-            <a href="#contact"><i class="fa fa-envelope fa-fw hidden-xs"></i> Contact</a>
-          </li>
-          <li>
-            <a href="http://www.yoavram.com/"><i class="fa fa-home fa-fw hidden-xs"></i> Home</a>
-          </li>
-          <li>
-            <a href="javascript:$('#speakerDeckModal').modal('toggle');" target="_blank"><i class="fa fae-python fa-fw hidden-xs"></i> Why Python?</a>
-          </li>
-<!--           <li>
-            <a href="javascript:$('#julia-tab').tab('show'); window.location.href='#courses';" target="_blank"><span class="badge hidden-xs">J</span> Julia, too!</a>
-          </li> -->
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!-- notification bar -->
-  <!-- <div class="row">
-    <div class="col-md-12 text-center">
-      <div class="notification alert alert-warning" role="alert">
-        </br>
-        
-        <a href="/Deep4Devs">
-          <h3>
-             Deep Learning Workshop <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </h3>
-          </a>
-      </div>
-    </div>
-  </div>
- -->
-  <!-- Header -->
-  <div class="intro-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="intro-message">            
-            <h1>
-              Yoav Ram
-            </h1>                    
-            <h3>Python Training for Engineers, Data Scientists, and Everyone</h3>            
-            <hr class="intro-divider">                    
-            <ul class="list-inline intro-social-buttons">
-              <li>
-                <a href="mailto:yoav@yoavram.com" class="btn btn-default btn-lg">
-                  <i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/yoavram" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/yoavram" class="btn btn-default btn-lg">
-                  <i class="fa fa-github-alt fa-fw"></i> <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/yoavram" class="btn btn-default btn-lg">
-                  <i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.intro-header -->
-
-  <!-- Page Content -->
-
-  <a name="about"></a>
-  <div class="about-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 class="section-title">
-            About
-          </h1>
-          <hr class="section-title-spacer">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 hidden-xs">
-          <div class="center-block" style="max-width:225px;">
-            <img class="img-responsive img-circle" src="img/avatar_225x338.jpg"></img>
-          </div>
-        </div>
-        <div class="col-sm-8">
-		<p class="lead">
-		&dash; Assistant Professor at the Faculty of Life Sciences, Tel Aviv University </br>
-		&dash; Postdoctoral fellow at Stanford University </br>
-		&dash; PhD in Mathematical &amp; Computational Biology from Tel Aviv University </br>
-		&dash; Excellence in Teaching Award from Tel Aviv University & IDC Herzliya </br>
-		</p>
-		<p class="lead">
-		&dash; Programming with <u>Python</u> since 2002 </br>
-		&dash; Teaching Python since 2011 </br>
-		&dash; Specializing in <u>Data Science &amp; Scientific Computing with Python</u>: 
-		</br>
-		&#8195;&#8195;<em>Jupyter, NumPy, SciPy, Matplotlib, Pandas, Scikit-learn &amp; Keras</em> </br>
-		</p>                		
-		</div>
-
-	</div>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap bar">
+<a class="brand" href="/"><span class="name">Yoav Ram, PhD</span><span class="tag"> | Data Science &amp; Scientific Computing: Training &amp; Consulting</span></a>
+<nav aria-label="Main">
+<ul>
+<li><a href="/#workshops">Workshops</a></li>
+<li><a href="/#about">About</a></li>
+<li><a href="/#how-i-teach">How I teach</a></li>
+<li><a href="/#testimonials">Testimonials</a></li>
+<li><a href="/#contact">Contact</a></li>
+<li><a href="https://www.yoavram.com/">Home</a></li>
+</ul>
+</nav>
 </div>
-
+</header>
+<main id="main">
+<section class="hero">
+<div class="wrap">
+<h1>Machine Learning &amp; AI training for R&amp;D Teams</h1>
+<p class="sub">Hands-on, taught by a practising scientist. For engineering and R&amp;D teams in ML, AI, algorithm, vision, metrology, semiconductor, and hardware companies.</p>
+<p class="actions"><a class="btn btn-primary" href="#contact">Plan a workshop for your team</a> <a class="btn btn-secondary" href="#workshops">Browse workshops</a></p>
 </div>
-
-<a  name="testimonials"></a>
-<div class="content-section-a">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1 class="section-title">
-          Testimonials
-        </h1>
-        <hr class="section-title-spacer">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-          <!-- Bottom Carousel Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#quote-carousel" data-slide-to="1"></li>
-            <li data-target="#quote-carousel" data-slide-to="2"></li>
-            <li data-target="#quote-carousel" data-slide-to="3"></li>
-          </ol>
-
-          <!-- Carousel Slides / Quotes -->
-          <div class="carousel-inner">
-
-            <!-- Quote Dror -->
-            <div class="item active">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p>&ldquo;A group of us have taken Yoav’s <em>Python for Engineers</em> course during 4.5 days, as part of a process to shift from using MATLAB<sup>&reg;</sup> as our main workhorse for R&D.
-                    The course was great for us, and covered many topics which would be beneficial in the future – from the basics of Python as a language and its various packages, up to more advanced topics like image processing, GUI building, and parallel computing.
-                  </p>
-                  <p>
-                    Yoav’s background as a researcher using Python makes the course very suitable for people looking to use Python for research.
-                    Not only is Yoav very knowledgeable in the intricacies of Python, but he is also a great teacher, who was able to provide valuable insights and answers to any questions.
-                  </p>
-                  <p>
-                    I would definitely recommend this course for any person wishing to start using Python.
-                  &rdquo;</p>                          
-                  <p class="text-info">
-                    <strong>Dror Alumot</strong>
-                  </p>
-                  <p>
-                    <a href="https://www.kla-tencor.com" target="_blank">
-                      <img class="carousel-img" src="img/KLA-Tencor_Logo.jpg">
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quote Lior -->
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p>&ldquo;Yoav gave PDC (Applied Material Israel) a <em>Scientific Python Course for MATLAB<sup>&reg;</sup>  users</em> in March 2016.
-                    As we are all scientific Matlab programmers, we challenged Yoav with in-depth questions regarding practical problems we are facing in our work.
-                    Yoav demonstrated very good and thorough knowledge in Python, he explained the material in a very methodic way, and used very nice practical examples and exercises. When he did not know something, he returned with an answer by mail or by the next lesson.
-                  </p>
-                  <p>
-                    I feel that I gained a lot of knowledge from this course and that this was a great kick-off for starting work with Python.
-                    I really recommend scientific programmers to use Yoav’s Python training.
-                  Well Done.&rdquo;</p>
-                  <p class="text-info">
-                    <strong>Lior Cohen, Algorithm/SW Manager</strong>
-                  </p>
-                  <p>
-                    <a href="http://www.appliedmaterials.com" target="_blank">
-                      <img class="carousel-img" src="img/Applied_Materials_Logo.svg">
-                    </a>
-                  </p>                          
-                </div>
-              </div>
-            </div>
-
-            <!-- Quote Asaf -->
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p>&ldquo;We attended Yoav’s <em>Python for Engineers</em> course and the course exceeded our expectations in many regards. Yoav is not only very professional and knowledgeable in the field of Python and all related packages, but he is also a very professional and clear instructor.
-                    The course really helped us understand basic Python and get familiar with many of the scientific packages and other useful tools (such as GUI, parallel computing, and other packages) available in Python.
-                  </p>
-                  <p>
-                    Even die-hard fans of MATLAB<sup>&reg;</sup>  were convinced by the end of the course that Python is an excellent replacement and we will definitely implement what we have learned in our next projects.
-                  As a company that performs complicated algorithmic research and development projects (in fields such as computer vision, machine learning, and especially deep learning) we greatly recommend this course to anyone who is interested in learning Python for engineering or algorithmic research and development purposes.&rdquo;</p>
-                  <p class="text-info">
-                    <strong>Asaf Kagan</strong>
-                  </p>
-                  <p>
-                    <a href="http://saips.co.il" target="_blank">
-                      <img class="carousel-img" src="img/SAIPS_Logo.png">
-                    </a>
-                  </p>                          
-                </div>
-              </div>
-            </div>
-            <!-- Quote Yanir -->
-            <div class="item">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p>&ldquo;Not one, but two groups of researchers from ‘Nova Measuring Instruments’ attended Yoav Ram’s course consecutively. This by itself can serve as a quality stamp. 
-                    Yoav’s course is thorough, didactic, comprehensive, and very clear. It is exactly what anyone would need to start developing in Python, or make the transition to Python if you are a MATLAB<sup>&reg;</sup> addict.
-                  </p>
-                  <p>Highly recommended!&rdquo;</p>
-                  <p>&nbsp;</p>
-                  <p>&nbsp;</p>
-                  <p class="text-info">
-                    <strong>Yanir Hainick, modeling team-leader, CTO group</strong>
-                  </p>
-                  <p>
-                    <a href="http://novameasuring.com" target="_blank">
-                      <img class="carousel-img" src="img/Nova_Logo.png">
-                    </a>
-                  </p>                          
-                </div>
-              </div>
-            </div>                          
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+</section>
+<section class="clients" aria-labelledby="clients-h">
+<div class="wrap">
+<h2 id="clients-h" class="eyebrow">Teams I have trained or worked with</h2>
+<ul>
+<li>KLA</li>
+<li>Applied Materials</li>
+<li>Lam Research</li>
+<li>Nova</li>
+<li>Mobileye</li>
+<li>Intuit</li>
+<li>Houzz</li>
+<li>trellis.ag</li>
+<li>BlueVine</li>
+<li>SAIPS</li>
+</ul>
+</div>
+</section>
+<section id="workshops" class="section">
+<div class="wrap">
+<h2>Workshops</h2>
+<p class="intro">Six workshops, each of which can be taught on its own or combined with others. Every workshop is tailored to your team.</p>
+<p class="custom">Custom topics <a href="#contact">on request</a>.</p>
+<div class="cards">
+<article class="card">
+<h3><a href="/modules/scientific-python/">Scientific Python and Data Science</a></h3>
+<p class="for">For engineers and developers new to Python, including engineers moving from MATLAB®.</p>
+<ul>
+<li>Write idiomatic Python for numerical work.</li>
+<li>Analyse data, signals, images and time series with NumPy, pandas and SciPy.</li>
+<li>Test your code and set up reproducible environments.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> 1–5 days</p>
+</article>
+<article class="card">
+<h3><a href="/modules/deep-learning/">Deep Learning from First Principles</a></h3>
+<p class="for">For developers and engineers who want to really understand neural networks.</p>
+<ul>
+<li>Derive neural networks from maximum likelihood and linear and logistic regression.</li>
+<li>Build and train feed-forward networks, CNNs and sequence models for images and time series.</li>
+<li>Explain what backpropagation is doing and why a model fails to train.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> 2–3 days</p>
+</article>
+<article class="card">
+<h3><a href="/modules/ml-evaluation-uncertainty/">Machine Learning Evaluation and Uncertainty</a></h3>
+<p class="for">For teams working with ML models.</p>
+<ul>
+<li>Design held-out evaluation that matches real use.</li>
+<li>Find leakage and selection bias before your customers do.</li>
+<li>Quantify uncertainty with Bayesian inference, calibration and conformal prediction.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> 2–3 days</p>
+</article>
+<article class="card">
+<h3><a href="/modules/open-set-learning/">Open-Set Learning: Metric Learning, Zero-Shot and Re-Identification</a></h3>
+<p class="for">For teams whose models must handle classes, individuals or items they have not seen.</p>
+<ul>
+<li>Explain closed-set versus open-set classification, and evaluate on classes the model never saw.</li>
+<li>Classify zero-shot with CLIP, and learn your own embedding with metric learning.</li>
+<li>Build and evaluate a re-identification pipeline.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> 2 days</p>
+</article>
+<article class="card">
+<h3><a href="/modules/ml-coding-agents/">ML with Coding Agents</a></h3>
+<p class="for">For R&amp;D teams adopting AI-assisted coding.</p>
+<ul>
+<li>Specify tasks so an agent's output can be checked.</li>
+<li>Review and verify agent-written code.</li>
+<li>Deliver a ML analysis with an agent without silent errors.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> 1 day</p>
+</article>
+<article class="card">
+<h3><a href="/modules/llms-first-principles/">LLMs from First Principles</a></h3>
+<p class="for">For engineers and technical managers.</p>
+<ul>
+<li>Build tokenisation, a transformer and a training loop small enough to run on a laptop.</li>
+<li>Pretrain a small language model.</li>
+<li>Fine-tune it to follow instructions.</li>
+<li>Apply reinforcement learning from rewards, and see how reward hacking arises.</li>
+<li>Build a software-engineering (SWE) agent.</li>
+</ul>
+<p class="meta"><strong>Typical length:</strong> 2 days</p>
+</article>
 </div>
 </div>
+</section>
+<section id="about" class="section alt">
+<div class="wrap about">
+<img src="/img/yoav-ram.jpg" width="300" height="452" alt="Portrait of Yoav Ram" class="portrait">
+<div>
+<h2>About the instructor</h2>
+<ul>
+<li>Assistant Professor, Faculty of Life Sciences, Tel Aviv University</li>
+<li>Postdoc at Stanford University; PhD in Mathematical &amp; Computational Biology, Tel Aviv University</li>
+<li>Teaching Python and Data Science since 2011, in academia and industry; Excellence in Teaching awards from Tel Aviv University and IDC Herzliya</li>
+</ul>
 </div>
 </div>
-
-<a name="videos"></a>
-<div class="content-section-b">
-
-  <div class="container" >
-    <div class="row" >
-      <div class="col-sm-12">
-        <h1 class="section-title">
-          Videos
-        </h1>
-        <hr class="section-title-spacer">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="col-sm-12 embed-responsive-item"
-src="https://www.youtube.com/embed/nPOJ56XULus" wmode="Opaque" allowfullscreen>
-</iframe>
-        </div>        
-      </div>
-    </div>
-  </div>
+</section>
+<section id="how-i-teach" class="section">
+<div class="wrap">
+<h2>How I teach</h2>
+<ul class="points">
+<li><strong>Hands-on and interactive.</strong> Workshops are taught in Jupyter notebooks, in VS Code.</li>
+<li><strong>Short and long exercises.</strong> Short exercises to practise each idea, and longer ones to put several together.</li>
+<li><strong>No slides.</strong> All the code is shown and discussed.</li>
+<li><strong>Theory and application.</strong> Each topic is taught together with how to apply it.</li>
+</ul>
 </div>
-
-<a name="courses"></a>
-<div class="content-section-a">
-
-  <div class="container" >
-    <div class="row" >
-      <div class="col-sm-12">
-        <h1 class="section-title">
-          Courses
-        </h1>
-        <hr class="section-title-spacer">
-         <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist" id="courses-tabs">           
-            <li role="presentation"><a href="#1DayPy" aria-controls="profile" role="tab" data-toggle="tab">Introduction to Python</a></li>
-            <li role="presentation" class="active"><a href="#Py4Eng" aria-controls="home" role="tab" data-toggle="tab">Python for Engineers</a></li>
-            <li role="presentation"><a href="#MLDLPy" aria-controls="profile" role="tab" data-toggle="tab">Machine Learning</a></li>
-            <!-- <li role="presentation"><a href="#Py4Life" aria-controls="profile" role="tab" data-toggle="tab">Python for Biologists</a></li> -->
-            <li role="presentation"><a href="/Deep4Devs" aria-controls="profile" id="deep4devs-tab">Deep Learning</a></li>
-            <li role="presentation"><a href="#Bayesian" aria-controls="profile" role="tab" data-toggle="tab">Bayesian inference</a></li>
-          </ul>
-      </div>
-    </div>
-
-    <div class="row"> 
-      <div class="col-sm-12">
-       
-      <div class="tab-content">
-        <!-- Py4Eng -->
-        <div role="tabpanel" class="tab-pane active" id="Py4Eng">
-            <h2 class="section-heading">
-              Python for Engineers
-            </h2>
-            <h3 class="section-heading">
-              Python Programming for MATLAB<sup>&reg;</sup> Users
-            </h3>
-            <p class="lead">
-              The course is intended for engineers with MATLAB<sup>&reg;</sup> experience that are 
-              interested in applying their knowledge and skills using the Python programming language. 
-            </p>
-            <p class="lead">
-              The course combines practical programming skills in the Python programming language with 
-              a comprehensive overview of major numerical, mathematical, and statistical libraries. 
-              The course is taught entirely using interactive notebooks and includes hands-on exercises.
-            </p>
-            <p class="lead">
-              <ul>
-                <li>
-                  Four-five days, 32-40 hours of interactive lectures in a computer lab
-                </li>                                
-                <li>
-                  Built-in exercises
-                </li>
-                <li>
-                  Python 3.8
-                </li>
-                <li>
-                  All course material in interactive Jupyter notebooks
-                </li>
-                <li>
-                  Topics:
-                  <ul class="list-inline">
-                    <li>Basic Python</li><li>&sdot;</li>
-                    <li>Idiomatic Python</li><li>&sdot;</li>
-                    <li>Object Oriented Programming</li><li>&sdot;</li>    
-                    <li>I/O</li><li>&sdot;</li>
-                    <li>N-dimensional arrays</li><li>&sdot;</li>
-                    <li>Plotting &amp; Visualizations</li><li>&sdot;</li>
-                    <li>Linear algebra</li><li>&sdot;</li>
-                    <li>Calculus</li><li>&sdot;</li>
-                    <li>Digital signal processing</li><li>&sdot;</li>
-                    <li>Image analysis</li><li>&sdot;</li>
-                    <li>Statistics</li><li>&sdot;</li>
-                    <li>Stochastic processes</li><li>&sdot;</li>
-                    <li>Curve fitting</li><li>&sdot;</li>
-                    <li>Optimization</li><li>&sdot;</li>
-                    <li>Machine learning</li><li>&sdot;</li>
-                    <li>Deep learning</li><li>&sdot;</li>
-                    <li>Symbolic mathematics</li><li>&sdot;</li>
-                    <li>High performance computing</li><li>&sdot;</li>
-                    <li>Testing and debugging</li><li>&sdot;</li>
-                    <li>User interfaces</li><li>&sdot;</li>
-                    <li>RESTful web services</li><li>&sdot;</li>
-                    <li>Monitoring and event scheduling</li>
-                  </ul>                              
-                </li>                            
-                <li>
-                  Python libraries: 
-                  <ul class="list-inline">
-                    <li><a href="http://ipython.org/" target="_blank">IPython/Jupyter</a></li><li>&sdot;</li>
-                    <li><a href="http://www.numpy.org/" target='_blank'>NumPy</a></li><li>&sdot;</li>
-                    <li><a href="http://scipy.org/scipylib/index.html" target='_blank'>SciPy</a></li><li>&sdot;</li>
-                    <li><a href="http://matplotlib.org/" target='_blank'>Matplotlib</a></li><li>&sdot;</li>
-                    <li><a href="http://pandas.pydata.org/" target='_blank'>Pandas</a></li><li>&sdot;</li>
-                    <li><a href="http://stanford.edu/~mwaskom/software/seaborn/" target='_blank'>Seaborn</a></li><li>&sdot;</li>
-                    <li><a href="http://scikit-image.org/" target='_blank'>Scikit-image</a></li><li>&sdot;</li>
-                    <li><a href="http://scikit-learn.org/" target='_blank'>Scikit-learn</a></li><li>&sdot;</li>
-                    <li><a href="http://tensorflow.org" target='_blank'>TensorFlow</a></li><li>&sdot;</li>
-                    <li><a href="http://sympy.org/" target='_blank'>SymPy</a></li><li>&sdot;</li>
-                    <li><a href="http://cython.org" target='_blank'>Cython</a></li><li>&sdot;</li>
-                    <li><a href="http://www.tkdocs.com/index.html" target='_blank'>Tk</a></li><li>&sdot;</li>
-                    <li><a href="http://click.pocoo.org" target='_blank'>Click</a></li><li>&sdot;</li>                 
-                    <li><a href="http://flask.pocoo.org" target='_blank'>Flask</a></li>
-                  </ul>
-                </li>                   
-              </ul>
-            </p>
-            <p class="lead">
-              <div class="btn-group">                                                 
-                <a href="https://github.com/yoavram/Py4Eng" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i> Course repo
-                </a>                        
-                <a href="https://speakerdeck.com/yoavram/introduction-to-python-for-scientific-computing" class="btn btn-default btn-lg">
-                  <i class="fa fa-caret-square-o-right fa-fw"></i> Introduction
-                </a>
-                <a href="http://mybinder.org/repo/yoavram/Py4Eng/tree/sessions/scikit-learn.ipynb" class="btn btn-default btn-lg" title="Loading might take several minutes...">
-                  <i class="fa fa-laptop fa-fw"></i> Preview
-                </a>
-              </div>
-            </p>
-        </div>
-        <!-- Py4Eng -->
-        
-        <!-- 1DayPy -->
-        <div role="tabpanel" class="tab-pane" id="1DayPy">
-          
-                <h2 class="section-heading">
-                    Introduction to Python
-                </h2>
-                <h3 class="section-heading">
-                    One Day Workshop on Data Science with Python for Developers and Engineers
-                </h3>
-                <p class="lead">
-                    This one day workshop is intended for software developers and engineers interested in a quick introduction to the Python programming language and its use for data science.                    
-                </p>
-                <p class="lead">
-                    The one day workshop combines an introduction to the basics of the Python programming language with a preview of the common tools used for data analysis and visualization. 
-                    The workshop is taught entirely using interactive notebooks and includes hands-on exercises.                   
-                </p>
-                <p class="lead">
-                    <ul>
-                        <li>
-                            8 hours of interactive hands-on sessions
-                        </li>                                
-                        <li>
-                            Built-in exercises
-                        </li>
-                        <li>
-                            Python 3.8
-                        </li>
-                        <li>
-                            All course material in interactive Jupyter notebooks
-                        </li>
-                        <li>
-                            Python libraries: 
-                            <ul class="list-inline">
-                                <li><a href="http://jupyter.org/" target="_blank">IPython/Jupyter</a></li><li>&sdot;</li>
-                                <li><a href="http://www.numpy.org/" target='_blank'>Numpy</a></li><li>&sdot;</li>
-                                <li><a href="http://scipy.org/scipylib/index.html" target='_blank'>SciPy</a></li><li>&sdot;</li>
-                                <li><a href="http://matplotlib.org/" target='_blank'>Matplotlib</a></li><li>&sdot;</li>
-                                <li><a href="http://pandas.pydata.org/" target='_blank'>Pandas</a></li><li>&sdot;</li>
-                                <li><a href="http://stanford.edu/~mwaskom/software/seaborn/" target='_blank'>Seaborn</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </p>    
-                <p class="lead">
-                    <div class="btn-group">                         
-                    <!--     <a href="" class="btn btn-default btn-lg">
-                            <i class="fa fa-globe fa-fw"></i> Course site
-                        </a>
-                        <a href="" class="btn btn-default btn-lg">
-                            <i class="fa fa-github fa-fw"></i> Course repo
-                        </a> -->
-                      <a href="http://nbviewer.jupyter.org/github/yoavram/Py4Eng/blob/master/sessions/pandas-seaborn.ipynb" class="btn btn-default btn-lg" title="Loading might take several minutes...">
-                          <i class="fa fa-laptop fa-fw"></i> Preview
-                      </a>
-                    </div>
-                </p>
-        </div>
-        <!-- 1DayPy -->
-
-        <!-- MLDLPy -->
-        <div role="tabpanel" class="tab-pane" id="MLDLPy">
-                <h2 class="section-heading">
-                    Machine Learning with Python
-                </h2>
-                <h3 class="section-heading">
-                    One Day Workshop on Data Analysis and Machine Learning with Python
-                </h3>
-                <p class="lead">
-                    The workshop is intended for developers and engineers with Python experience interested in machine learning with Python. 
-                </p>
-                <p class="lead">
-                    The one day workshop provides an introduction to common tools used for data analysis and visualization in Python and to libraries used for machine learning (scikit-learn).
-                    The course is taught entirely using interactive notebooks and includes hands-on exercises.
-                </p>
-                <p class="lead">
-                    <ul>
-                        <li>
-                            8 hours of interactive hands-on sessions
-                        </li>                                
-                        <li>
-                            Built-in exercises
-                        </li>
-                        <li>
-                            Python 3.8
-                        </li>
-                        <li>
-                            All course material in interactive Jupyter notebooks
-                        </li>
-                        <li>
-                            Topics:
-                            <ul class="list-inline">
-                                <li>Data processing and analysis</li><li>&sdot;</li>
-                                <li>Plotting &amp; Visualizations</li><li>&sdot;</li>
-                                <li>Machine learning</li><li>&sdot;</li>
-                                <li>Deep learning</li><li>&sdot;</li>
-                                <li>Convolutional neural networks</li>
-                            </ul>                              
-                        </li>                            
-                        <li>
-                            Python libraries: 
-                            <ul class="list-inline">
-                                <li><a href="http://ipython.org/" target="_blank">IPython/Jupyter</a></li><li>&sdot;</li>
-                                <li><a href="http://www.numpy.org/" target='_blank'>NumPy</a></li><li>&sdot;</li>
-                                <li><a href="http://scipy.org/scipylib/index.html" target='_blank'>SciPy</a></li><li>&sdot;</li>
-                                <li><a href="http://matplotlib.org/" target='_blank'>Matplotlib</a></li><li>&sdot;</li>
-                                <li><a href="http://pandas.pydata.org/" target='_blank'>Pandas</a></li><li>&sdot;</li>
-                                <li><a href="http://stanford.edu/~mwaskom/software/seaborn/" target='_blank'>Seaborn</a></li><li>&sdot;</li>
-                                <li><a href="http://scikit-learn.org/" target='_blank'>Scikit-learn</a></li><li>&sdot;</li>
-                                <li><a href="http://tensorflow.org" target='_blank'>TensorFlow</a></li>                 
-                            </ul>
-                        </li>                   
-                    </ul>
-                </p>
-                <p class="lead">
-                    <div class="btn-group">                            
-                       <!--  <a href="" class="btn btn-default btn-lg">
-                            <i class="fa fa-github fa-fw"></i> Course repo
-                        </a>                        
-                        <a href="" class="btn btn-default btn-lg">
-                            <i class="fa fa-caret-square-o-right fa-fw"></i> Introduction
-                        </a>-->
-                        <a href="http://nbviewer.jupyter.org/github/yoavram/Py4Eng/blob/master/sessions/scikit-learn.ipynb" class="btn btn-default btn-lg" title="Loading might take several minutes...">
-                            <i class="fa fa-laptop fa-fw"></i> Preview
-                        </a>
-                    </div>
-                </p>
-
-            
-        </div>
-        <!-- MLDLPy -->
-
-        
-        <!-- Bayesian -->
-		<div role="tabpanel" class="tab-pane" id="Bayesian">
-                <h2 class="section-heading">
-                    Bayesian Inference with Python
-                </h2>
-                <h3 class="section-heading">
-                    One Day Workshop on Bayesian Onferenece with Python
-                </h3>
-                <p class="lead">
-                    The workshop is intended for developers and engineers with Python experience interested in Bayesian inference with Python. 
-                </p>
-                <p class="lead">
-                    The one day workshop provides an introduction to Bayesian inference, including a comparison to maximum likelihood inference, use in linear models, approximate Bayesian computation, and use of popular Bayesian libraries (<code>emcee</code> or <code>PyMC3</code>).
-                    The course is taught entirely using interactive notebooks and includes hands-on exercises.
-                </p>
-                <p class="lead">
-                    <ul>
-                        <li>
-                            8 hours of interactive hands-on sessions
-                        </li>                                
-                        <li>
-                            Built-in exercises
-                        </li>
-                        <li>
-                            Python 3.8
-                        </li>
-                        <li>
-                            All course material in interactive Jupyter notebooks
-                        </li>
-                        <li>
-                            Topics:
-                            <ul class="list-inline">
-                                <li>Statistical inference with maximum likelihood</li><li>&sdot;</li>
-                                <li>Bayesian inference with MCMC</li><li>&sdot;</li>
-                                <li>Sampler (emcee, SMC) </li><li>&sdot;</li>
-                                <li>Bayesian linear models</li><li>&sdot;</li>
-                                <li>Approximate Bayesian computation</li>
-                            </ul>                              
-                        </li>                            
-                        <li>
-                            Python libraries: 
-                            <ul class="list-inline">
-                                <li><a href="http://ipython.org/" target="_blank">IPython/Jupyter</a></li><li>&sdot;</li>
-                                <li><a href="http://emcee.readthedocs.io" target='_blank'>emcee</a></li><li>&sdot;</li>
-                                <li><a href="https://docs.pymc.io" target='_blank'>PyMC3</a></li><li>&sdot;</li>
-                                <li><a href="http://pyabc.readthedocs.io" target='_blank'>PyABC</a></li><li>&sdot;</li>          
-                            </ul>
-                        </li>                   
-                    </ul>
-                </p>
-                <p class="lead">
-                    <!--<div class="btn-group">                            
-                         <a href="" class="btn btn-default btn-lg">
-                            <i class="fa fa-github fa-fw"></i> Course repo
-                        </a>                        
-                        <a href="" class="btn btn-default btn-lg">
-                            <i class="fa fa-caret-square-o-right fa-fw"></i> Introduction
-                        </a>
-                        <a href="http://nbviewer.jupyter.org/github/yoavram/Py4Eng/blob/master/sessions/scikit-learn.ipynb" class="btn btn-default btn-lg" title="Loading might take several minutes...">
-                            <i class="fa fa-laptop fa-fw"></i> Preview
-                        </a>
-                    </div>-->
-                </p>
-
-            
-        </div>
-        <!-- Bayesian -->
-
-        
-      </div>
-    </div>
-    </div>                
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.content-section-b -->
-
-
-<!-- .contact -->
-<a  name="contact"></a>
-<div class="contact-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1 class="section-title">
-          Contact
-        </h1>
-        <hr class="section-title-spacer">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-lg-offset-3">
-
-        <form class="form-horizontal" id="contactForm">
-          <div class="form-group">
-            <div class="col-sm-12">
-              <div class="input-group">
-                <span class="input-group-addon" id="name-addon"><i class="fa fa-user"></i></span>
-                <input type="text" class="form-control" id="name" placeholder="Your name" aria-describedby="name-addon">
-              </div>
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-12">
-              <div class="input-group">
-                <span class="input-group-addon" id="email-addon"><i class="fa fa-envelope"></i></span>
-                <input type="email" class="form-control" id="email" placeholder="youremail@example.com" aria-describedby="email-addon">                          
-              </div>
-
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="form-group">                    
-            <div class="col-sm-12">
-              <textarea rows="4" class="form-control" placeholder="Your message" id="message" name="message" required data-validation-required-message="Please type your message."></textarea>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-12">
-              <button type="submit" class="btn btn-primary pull-right">&nbsp;<i class="fa fa-send-o fa-fw"></i> Send &nbsp;&nbsp;</button>
-            </div>
-          </div>
-        </form>                
-
-      </div>
-    </div>
-  </div>
-  <!-- .container -->
-
+</section>
+<section id="testimonials" class="section alt">
+<div class="wrap">
+<h2>Testimonials</h2>
+<div class="testimonials">
+<input type="checkbox" id="stop-motion" class="stop">
+<label for="stop-motion" class="stop-label"><span class="on">Stop auto-scroll</span><span class="off">Resume auto-scroll</span></label>
+<section class="gallery" aria-label="Testimonials">
+<div class="track">
+<figure class="quote slide">
+<blockquote>
+<p>“A group of us have taken Yoav’s <em>Python for Engineers</em> course during 4.5 days, as part of a process to shift from using MATLAB® as our main workhorse for R&amp;D. The course was great for us, and covered many topics which would be beneficial in the future – from the basics of Python as a language and its various packages, up to more advanced topics like image processing, GUI building, and parallel computing.</p>
+<p>Yoav’s background as a researcher using Python makes the course very suitable for people looking to use Python for research. Not only is Yoav very knowledgeable in the intricacies of Python, but he is also a great teacher, who was able to provide valuable insights and answers to any questions.</p>
+<p>I would definitely recommend this course for any person wishing to start using Python.”</p>
+</blockquote>
+<figcaption><strong>Dror Alumot</strong>, KLA</figcaption>
+</figure>
+<figure class="quote slide">
+<blockquote>
+<p>“Yoav gave PDC (Applied Material Israel) a <em>Scientific Python Course for MATLAB® users</em> in March 2016. As we are all scientific Matlab programmers, we challenged Yoav with in-depth questions regarding practical problems we are facing in our work. Yoav demonstrated very good and thorough knowledge in Python, he explained the material in a very methodic way, and used very nice practical examples and exercises. When he did not know something, he returned with an answer by mail or by the next lesson.</p>
+<p>I feel that I gained a lot of knowledge from this course and that this was a great kick-off for starting work with Python. I really recommend scientific programmers to use Yoav’s Python training. Well Done.”</p>
+</blockquote>
+<figcaption><strong>Lior Cohen</strong>, Algorithm/SW Manager, Applied Materials</figcaption>
+</figure>
+<figure class="quote slide">
+<blockquote>
+<p>“We attended Yoav’s <em>Python for Engineers</em> course and the course exceeded our expectations in many regards. Yoav is not only very professional and knowledgeable in the field of Python and all related packages, but he is also a very professional and clear instructor. The course really helped us understand basic Python and get familiar with many of the scientific packages and other useful tools (such as GUI, parallel computing, and other packages) available in Python.</p>
+<p>Even die-hard fans of MATLAB® were convinced by the end of the course that Python is an excellent replacement and we will definitely implement what we have learned in our next projects. As a company that performs complicated algorithmic research and development projects (in fields such as computer vision, machine learning, and especially deep learning) we greatly recommend this course to anyone who is interested in learning Python for engineering or algorithmic research and development purposes.”</p>
+</blockquote>
+<figcaption><strong>Asaf Kagan</strong>, SAIPS</figcaption>
+</figure>
+<figure class="quote slide">
+<blockquote>
+<p>“Not one, but two groups of researchers from ‘Nova Measuring Instruments’ attended Yoav Ram’s course consecutively. This by itself can serve as a quality stamp. Yoav’s course is thorough, didactic, comprehensive, and very clear. It is exactly what anyone would need to start developing in Python, or make the transition to Python if you are a MATLAB® addict.</p>
+<p>Highly recommended!”</p>
+</blockquote>
+<figcaption><strong>Yanir Hainick</strong>, Modeling team-leader, CTO group, Nova</figcaption>
+</figure>
+<figure class="quote slide">
+<blockquote>
+<p>“Yoav was invited to give a Deep Learning workshop at our offices as extra curriculum for the employees. The workshop was very thorough, engaging, and super interesting. Yoav really demystified deep learning for us, transforming it to something we can all understand, explain, and even use in our everyday work. If you want to know more about deep learning, really understand what goes on under the hood, and stop being afraid of stuff like neural networks, model training, and TensorFlow, this is the workshop for you! Highly recommended!”</p>
+</blockquote>
+<figcaption><strong>Ofer Moshaioff</strong>, Senior Software Engineer, Houzz</figcaption>
+</figure>
+<figure class="quote slide">
+<blockquote>
+<p>“I attended Yoav's Deep4Devs workshop as part of our company's aim to add neural network-based algorithms to our machine learning arsenal. I found the workshop to be of very high-value for me, mainly due to Yoav's focus on understanding the inner workings of machine learning metrics in general, and specifically neural networks. The use of Jupyter notebooks with written explanations alongside the code samples kept the workshop practical, and ensured that I'll be able to revisit covered topics in the future. The workshop doesn't try to treat neural networks as black-boxes to be used off-the-shelf, but rather gives the participants intuition and knowledge on the trade-offs in neural network design and the background needed to tailor them to specific needs. Yoav's knowledge of the subject is very impressive and thorough and you'll be hard pressed to find subject-relevant questions which he won't be able to answer.”</p>
+</blockquote>
+<figcaption><strong>Uri Barenholz, PhD</strong>, Head of Applied Research, trellis.ag</figcaption>
+</figure>
+<figure class="quote slide">
+<blockquote>
+<p>“Yoav, the workshop was wonderful! It was full of examples and tools for applications, you presented the material with a lot of patience, and it was a pleasure to meet you. Thank you!”</p>
+</blockquote>
+<figcaption><strong>Einat Aviv</strong>, Head of Risk Data Science, BlueVine</figcaption>
+</figure>
 </div>
-<!-- /.contact -->
-
-<div class="banner">
-
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-6 text-center">
-        <h2>Connect with Yoav Ram:</h2>
-      </div>
-      <div class="col-lg-6 block-center">
-        <ul class="list-inline banner-social-buttons">
-          <li>
-            <a href="mailto:yoav@yoavram.com" class="btn btn-default">
-              <i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/yoavram" class="btn btn-default">
-              <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/yoavram" class="btn btn-default">
-              <i class="fa fa-github-alt fa-fw"></i> <span class="network-name">Github</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/yoavram" class="btn btn-default">
-              <i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-  <!-- /.container -->
-
+</section>
 </div>
-<!-- /.banner -->
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <ul class="list-inline">
-          <li>
-            Go to:
-          </li>
-          <li>
-            <a href="#">Top</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <li>
-            <a href="#courses">Courses</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <li>
-            <a href="http://www.yoavram.com/"> Home</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <li>
-            <a href="javascript:$('#speakerDeckModal').modal('toggle');" target="_blank"> Why Python?</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <!-- <li>
-            <a href="http://julialang.org/" target="_blank"> Julia, too!</a>
-          </li> -->
-        </ul>                     
-
-        <ul class="list-inline">
-          <li>
-            Resources:
-          </li>
-          <li>
-            <a href="https://github.com/yoavram/python.yoavram.com" target="_blank">Source code</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <li>
-            <a href="https://github.com/IronSummitMedia/startbootstrap-landing-page" target="_blank">Start Bootstrap Theme</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <li>
-            <a href="http://deathtothestockphoto.com" target="_blank">Death to the Stock Photo</a>
-          </li>
-          <li class="footer-menu-divider">&sdot;</li>
-          <li>
-            Portrait: <a href="http://www.amirslaney.com" target="_blank">Amir Slaney</a>
-          </li>
-        </ul>
-        <p class="copyright text-muted small">Copyright &copy; Yoav Ram 2016-2020. All Rights Reserved.</p>
-      </div>
-    </div>
-  </div>
+</div>
+</section>
+<section id="contact" class="section">
+<div class="wrap contact">
+<h2>Contact</h2>
+<p class="intro">Tell me about your team and what you would like them to be able to do. A few lines are enough to start; I will reply to set up a scoping call.</p>
+<p class="actions"><a class="btn btn-primary" href="mailto:yoav@yoavram.com?subject=Training%20enquiry%20%E2%80%94%20&amp;body=Company%3A%0D%0ATeam%20size%3A%0D%0ATeam%20background%3A%0D%0ATopics%20of%20interest%20%28workshops%20or%20%22not%20sure%22%29%3A%0D%0AOn-site%20%2F%20remote%3A%0D%0ATimeframe%3A%0D%0AAnything%20else%3A%0D%0A">Email Yoav</a> <span class="addr">yoav@yoavram.com</span></p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<ul>
+<li>© 2016–2026 Yoav Ram</li>
+<li>Email: yoav@yoavram.com</li>
+<li><a href="https://github.com/yoavram">GitHub</a></li>
+<li><a href="https://www.linkedin.com/in/yoavram">LinkedIn</a></li>
+<li><a href="https://www.yoavram.com/">Home</a></li>
+</ul>
+</div>
 </footer>
-
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll visible-xs visible-sm" id="elevator">
-  <a class="btn btn-primary" href="#page-top">
-    <i class="fa fa-chevron-up"></i>
-  </a>
-</div>
-
-<!-- SpeakerDeck modal -->
-<div class="modal fade" id="speakerDeckModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content" style="padding: 0 0 0 0">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">&nbsp;<i class="fa fae-python fa-fw hidden-xs"></i> Why Python?</h4>
-      </div>
-      <div class="modal-body" id="speakerDeckModalDiv">        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id="speakerDeckModalYouTube"><i class="fa fa-lg fa-youtube-play hidden-xs"></i> YouTube</button>
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<!-- Form success modal -->
-<div class="modal fade" id="formSuccessModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content" style="padding: 0 0 0 0">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">&nbsp;Thank you</h4>
-      </div>
-      <div class="modal-body">
-        <p>
-        Your message was sent.</br>
-        I'll be in touch soon.
-      </p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-    </div>
-  </div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<!-- Form failure modal -->
-<div class="modal fade" id="formFailureModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">&nbsp;Sendind failed</h4>
-      </div>
-      <div class="modal-body">
-        <p>
-          Sending failed, try again later or send an email to 
-          <a href="mailto:yoav@yoavram.com"><i class="fa fa-fw fa-envelope"></i></a>
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<!-- jQuery -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
-
-<!-- Contact form -->
-<script>
-  $("#contactForm").submit(function(e) {
-    $.ajax(
-    {
-      url : "//formspree.io/yoav@yoavram.com",
-      method: "POST",
-      dataType: "json",
-      data:
-      {
-        message: $('#contactForm #message').val(),
-        name: $('#contactForm #name').val(),
-        _replyto: $('#contactForm #email').val(),
-        _subject: "Contact - Python Training"
-      },
-      success: function(data, textStatus, jqXHR)
-      {
-        $('#formSuccessModal').modal('toggle');
-      },
-      error: function(jqXHR, textStatus, errorThrown)
-      {
-        $('#formFailureModal').modal('toggle');
-      }
-    });
-    e.preventDefault(); //STOP default action
-  });
-</script>
-
-
-<!-- SpeakerDeck modal on shown -->
-<script>
-  $(document).ready(function(){
-    $('#speakerDeckModal').on('shown.bs.modal', function() {
-      $('#speakerDeckModalDiv').html(
-        '<script async class="speakerdeck-embed" data-id="4970692afede4ef4b4ab82977a814356" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js">');
-    });
-    $('#speakerDeckModalYouTube').on('click', function() {
-      $('#speakerDeckModalDiv').html(
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLo2YZ8A8fvtiYHkYPD8RWaiWVdo4GmNfq" frameborder="0" allowfullscreen></iframe>'  
-      );
-    });
-  });
-</script>
-
-<!-- Random images -->
-<script>
-  $(document).ready(function() {
-        // random bg image
-        numOptions = 5;
-        randomNumber = Math.round(Math.random() * (numOptions - 1)) + 1;
-        var e = $('.intro-header');
-        e.css('background', 'url(../img/intro-bg' + randomNumber + '.jpg) no-repeat center center');
-        e.css('background-size', 'cover');
-      })
-    </script>
-
-    <!-- Testimonials carousel -->
-    <script>
-      $(document).ready(function() {
-      //carousel options      
-      $('#quote-carousel').carousel({
-        pause: "hover", interval: 10000,
-      });
-    });
-  </script>
-
-  <!-- Google analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-3865698-15', 'auto');
-    ga('send', 'pageview');
-
-  </script>
 </body>
 </html>

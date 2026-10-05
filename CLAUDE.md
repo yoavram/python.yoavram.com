@@ -4,28 +4,38 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-The landing page for Yoav Ram's corporate Python / ML training (python.yoavram.com). It is a plain static site: everything served lives in `www/`. There is no build, test, or lint tooling in the repo, and no `netlify.toml`. Hosting is presumably Netlify with publish directory `www` (set in the Netlify UI, not verified). To preview, serve `www/` with any static server, e.g. `python -m http.server -d www`.
+The landing page for Yoav Ram's corporate Python / ML training (python.yoavram.com). It is hand-written static HTML with one shared stylesheet: no framework, no build step, no JavaScript. Everything served lives in `www/`. Hosting is Netlify (project `python-yoavram`) with publish directory `www`.
 
-## Current structure (legacy 2016–2020 site)
+## Layout
 
-- `www/index.html` is a single long page with a Bootstrap 3 navbar, a testimonial carousel, a tabbed course section (`#Py4Eng`, `#1DayPy`, `#MLDLPy`, `#Bayesian`), a contact form and footer. The course panels are inline tab panes, not separate pages.
-- `www/Deep4Devs/` is a separate page with its own template (`css/agency.css`, `js/agency.js`, its own images and testimonials). It is not linked into the main stylesheet.
-- `www/css/landing-page.css` holds the site's custom styles. Bootstrap 3.3.6, jQuery 2.2.1, Font Awesome 4.5 and html5shiv/respond.js load from CDNs, and `css/font-awesome-extension.min.css` is vendored.
-- The contact form posts via AJAX to `//formspree.io/yoav@yoavram.com` and is broken (shows "Sending failed"). Analytics is Google Universal Analytics, which no longer collects data.
+- `www/index.html` is the home page: hero, clients, workshop cards, how I teach, testimonials, about, contact, footer.
+- `www/modules/<slug>/index.html` is one page per workshop (six). The site calls them "workshops" but the URL path is still `/modules/`. The pages share the same head, header and footer markup, copied by hand. When you change shared markup such as the nav or footer, change all seven pages.
+- `www/css/site.css` is the only stylesheet. Colours are tokens on `:root`, and the dark theme follows `prefers-color-scheme`.
+- `www/img/` keeps the portrait, `logo.png` (the Open Graph image) and the favicon set.
+- `content/DRAFT.md` is the copy the site was first built from (untracked). The HTML is now the source of truth, so edit it directly. Keep `DRAFT.md` as a reference only if you want, and say so if the two diverge.
 
-## Redesign plan (`plan.md`)
+## Commands
 
-`plan.md` in the repo root is currently untracked. It specifies a two-PR redesign: PR 1 is copy only (`content/DRAFT.md`), and PR 2 is the implementation after copy approval. Read it before doing any redesign work. PR 1's output, `content/DRAFT.md` on branch `site-content`, is written and awaiting Yoav's copy review. Don't build HTML from it until it is approved. The constraints it records as already decided:
+```bash
+python3 -m http.server -d www 8000          # preview at http://localhost:8000
+npx html-validate "www/**/*.html"           # HTML validation
+uvx codespell www content                   # spelling
+grep -rniE "3\.8|anaconda|tensorflow|pymc3|kla-tencor|twitter|google-analytics|bootstrap|jquery|formspree|<form|<script" www/
+```
 
-- No build step, no framework, no JavaScript, no Bootstrap or jQuery. Hand-written HTML plus one shared `www/css/site.css`.
-- One site: Deep4Devs folds into `/modules/deep-learning/`, with `/deep4devs/` and `/Deep4Devs/` redirected through `www/_redirects`.
-- Contact is `mailto:` only, with no form or backend. The address must also appear as plain text.
-- No analytics.
-- Don't invent content. No new testimonials, clients, numbers or credentials; use `TODO(Yoav): …` placeholders instead.
-- Testimonials stay verbatim. Don't edit or elide quoted text.
-- Don't pull copy from course repo READMEs. Repos may only be linked.
-- Don't name version pins or fast-rotting tools (no "Python 3.x", Anaconda or specific coding-agent products) in copy.
-- Show company names as text only, unless Yoav says to add logos.
-- Confirm Netlify hosting before relying on `_redirects`.
+The grep must return nothing except Ofer Moshaioff's verbatim testimonial, which contains "TensorFlow" and is exempt. `lychee` is not installed here, so links were checked with a throwaway script. LinkedIn answers bots with 999, and canonical URLs return 404 until the pages are deployed.
 
-The plan's acceptance checks, for after the redesign, are `html-validate` or `vnu`, `lychee www/`, `codespell www/ content/`, and a grep of `www/` for legacy tech (bootstrap, jquery, formspree, `<form`, `<script`, etc.).
+## Constraints (decided by Yoav)
+
+- No build step, no framework, no JavaScript, no forms or backend, and no analytics. The testimonials gallery is pure CSS (a keyframe animation with a checkbox toggle), by Yoav's request despite the plan's earlier "no carousel".
+- Contact is a `mailto:` link only, with a prefilled subject and body. Every `mailto:` href is URL-encoded and uses `&amp;` in HTML. The address must also appear as plain text. Workshop pages put the workshop title in the subject.
+- Don't invent content: no new testimonials, clients, numbers, credentials or outcomes. Use a visible `<mark class="todo">TODO(Yoav): …</mark>` instead.
+- Testimonials stay verbatim. Don't edit, elide or "fix" quoted text. Short excerpts are allowed only as full sentences.
+- Company names are text only. Yoav has no permission to show logos.
+- Don't name version pins or fast-rotting tools in copy (no "Python 3.x", Anaconda or specific coding-agent products). Core libraries (NumPy, pandas, scikit-learn, Keras, JAX, PyMC) belong in workshop details only.
+- Don't pull copy from course repo READMEs. Repos may be linked as sample materials.
+- If a design need seems to require a framework, a build step or any JavaScript, stop and say why.
+
+## Quality bar
+
+HTML validates, Lighthouse mobile Accessibility and Performance are both at least 90 on `/`, and there is no horizontal scroll at phone widths. Check phone widths by loading the page in a 320px iframe, because headless Chrome will not go below a 500px window.
