@@ -280,13 +280,8 @@ ol {
   margin-top: 1.5rem;
 }
 
-@media (min-width: 40rem) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 64rem) {
+/* one column until there is room for three, so no row ends with a lone card */
+@media (min-width: 56rem) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -394,10 +389,22 @@ ol {
 
 .points {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  grid-template-columns: 1fr;
   gap: 1.5rem 1.25rem;
   list-style: none;
   padding: 0;
+}
+
+@media (min-width: 36rem) {
+  .points {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 56rem) {
+  .points {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .points li {
@@ -585,6 +592,10 @@ ol {
 .about ul {
   padding-left: 1.2rem;
   font-size: 1.1rem;
+}
+
+.about .actions {
+  margin-top: 1.25rem;
 }
 
 .about li + li {
